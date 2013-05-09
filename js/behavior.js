@@ -1,6 +1,12 @@
 var Application = {
-	init : function () {
+	elements : {
+		container : null
+	},
+	values : {
 
+	},
+	init : function () {
+		this.elements.container = $('#container');
 	}
 }
 

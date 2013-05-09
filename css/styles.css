@@ -6,6 +6,9 @@ body { background: #e1e1e1; padding: 10px; font: 22px/1.5em "Roboto Slab", serif
 
 del { color: #b4b4b4; }
 
+a { color: blue; }
+a:hover { color: #3333ff; }
+
 #container { width: 460px; position: relative; margin: 0 auto; }
 #container #header { padding: 10px; font: 120% "Roboto", sans-serif; top: 0; left: 0; background: #e1e1e1; width: 460px; }
 #container #header .header-icon { height: 44px; vertical-align: -12px; margin-right: 10px; }

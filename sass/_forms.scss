@@ -1,0 +1,20 @@
+form {
+	input {
+		&[type=radio],
+		&[type=checkbox] {
+
+		}
+		&[type=hidden] {
+
+		}
+	}
+	textarea {
+
+	}
+	select {
+
+	}
+	button {
+
+	}
+}

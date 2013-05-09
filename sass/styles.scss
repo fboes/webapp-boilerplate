@@ -1,6 +1,7 @@
 @import "compass/css3/box-shadow";
 @import "base";
 @import "reset";
+@import "forms";
 
 body {
 	background:$background-color;
@@ -10,6 +11,12 @@ body {
 }
 del {
 	color: $color-font-light;
+}
+a {
+	color: $color-link;
+	&:hover {
+		color: lighten($color-link, 10%);
+	}
 }
 
 #container {
