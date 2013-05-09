@@ -13,18 +13,51 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<header>
+			<header role="banner">
 				<a href="#"><img src="apple-touch-icon.png" alt="Home" class="header-icon" /></a>
 				Flashy title
 			</header>
 		</div>
-		<div class="block">
-			<h4>Block heading</h4>
-			<ul>
-				<li>List item 1</li>
-				<li><a href="#">List item 2</a></li>
-				<li><del>List item 3</del></li>
-			</ul>
+		<div id="main">
+			<main role="main">
+				<div class="block">
+					<h4>Block heading</h4>
+					<ul>
+						<li>List item 1</li>
+						<li><a href="#">List item 2</a></li>
+						<li><del>List item 3</del></li>
+					</ul>
+				</div>
+				<div class="block">
+					<h4>Block heading</h4>
+					<form action="." method="get">
+						<label for="next">Input</label><input id="next" type="text" />
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+				<div class="block">
+					<h4>Block heading</h4>
+					<ul>
+						<li>List item 1</li>
+						<li><a href="#">List item 2</a></li>
+						<li><del>List item 3</del></li>
+					</ul>
+				</div>
+				<div class="block">
+					<h4>Block heading</h4>
+					<ul>
+						<li>List item 1</li>
+						<li><a href="#">List item 2</a></li>
+						<li><del>List item 3</del></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<div id="aside">
+			<aside role="complementary"><!-- --></aside>
+		</div>
+		<div id="footer">
+			<footer><!-- --></footer>
 		</div>
 	</div>
 	<script src="js/jquery-2.0.0.min.js"></script>

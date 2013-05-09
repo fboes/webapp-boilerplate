@@ -1,20 +1,23 @@
 form {
+	label,
+	button,
+	input,
+	select,
+	textarea {
+		font:inherit;
+		display:block;
+		width:100%;
+	}
 	input {
 		&[type=radio],
 		&[type=checkbox] {
-
+			display:inline-block;
 		}
 		&[type=hidden] {
-
+			display:none;
 		}
 	}
-	textarea {
-
-	}
-	select {
-
-	}
 	button {
-
+		padding: 0 $base-unit * 0.5;
 	}
 }

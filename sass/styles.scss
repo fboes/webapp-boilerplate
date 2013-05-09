@@ -20,30 +20,35 @@ a {
 }
 
 #container {
-	width:$width-container - (2 * $base-unit);
+	max-width:$width-container - (2 * $base-unit);
 	position:relative;
-	//padding-top:(5 * $base-unit);
+	padding-top:(5 * $base-unit);
 	margin: 0 auto;
 
 	#header {
 		padding:$base-unit;
 		font: 120% $font-family-header;
-		//position:fixed;
+		position:fixed;
 		top: 0;
 		left: 0;
 		background: $background-color;
-		width:$width-container - (2 * $base-unit);
+		width:100%;
 
-		.header-icon {
-			height:44px;
-			vertical-align:-12px;
-			margin-right:$base-unit;
+		header {
+			max-width:$width-container - (2 * $base-unit);
+			margin: auto;
+	
+			.header-icon {
+				height:44px;
+				vertical-align:-12px;
+				margin-right:$base-unit;
+			}
 		}
 	}
 
 	.block {
 		background:$background-color-content;
-		padding:$base-unit;
+		margin-bottom:2*$base-unit;
 		padding:2*$base-unit;
 		@include single-box-shadow(rgba(0,0,0,0.1), 1px, $base-unit / 2, $base-unit / 2);
 
@@ -51,5 +56,6 @@ a {
 			font-size:120%;
 			margin-bottom:$base-unit;
 		}
+
 	}
 }
