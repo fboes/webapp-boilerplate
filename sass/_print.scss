@@ -1,0 +1,45 @@
+* {
+	background: transparent !important;
+	color: black !important;
+	text-shadow: none !important;
+	filter:none !important;
+	-ms-filter: none !important;
+}
+@page {
+	margin: 0.5cm;
+}
+h1, h2, h3, h4 {
+	page-break-after: avoid;
+}
+h1, h2, h3, h4, p, li, tr, img {
+	page-break-inside: avoid;
+}
+thead {
+	display: table-header-group;
+}
+img {
+	max-width: 100% !important;
+}
+
+// -----------------------------------------------------------------
+// Page
+
+#header {
+	// insert stuff here
+}
+#nav {
+	// insert stuff here
+}
+#main {
+	// insert stuff here
+}
+#aside {
+	// insert stuff here
+}
+#footer {
+	// insert stuff here
+}
+.no-print {
+	display:none;
+}
+

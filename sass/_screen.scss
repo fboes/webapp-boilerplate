@@ -1,0 +1,56 @@
+body {
+	background:$background-color;
+	padding:$base-unit;
+	font: $font-size-container $font-family;
+	line-height:1.5em;
+	color: $color-font;
+}
+del {
+	color: $color-font-light;
+}
+a {
+	color: $color-link;
+	&:hover {
+		color: lighten($color-link, 10%);
+	}
+}
+
+#container {
+	padding-top:(5 * $base-unit);
+	position:relative;
+	margin: 0 auto;
+
+	#header {
+		padding:$base-unit;
+		font: 120% $font-family-header;
+		position:fixed;
+		top: 0;
+		left: 0;
+		background: $background-color;
+		width:100%;
+
+		header {
+			margin: auto;
+	
+			.header-icon {
+				height:44px;
+				vertical-align:-12px;
+				margin-right:$base-unit;
+			}
+		}
+	}
+
+	.block {
+		background:$background-color-content;
+		margin-bottom:2*$base-unit;
+		//margin-right:2*$base-unit;
+		padding:2*$base-unit;
+		@include single-box-shadow(rgba(0,0,0,0.1), 1px, $base-unit / 2, $base-unit / 2);
+
+		h4 {
+			font-size:120%;
+			margin-bottom:$base-unit;
+		}
+
+	}
+}

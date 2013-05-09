@@ -1,0 +1,33 @@
+@import "reset";
+
+html {
+  font-size: $font-size-base;
+}
+
+form {
+  .form-field {
+    display:block;
+    margin-bottom: $base-unit;
+  }
+  label,
+  button,
+  input,
+  select,
+  textarea {
+    font:inherit;
+    display:block;
+    width:100%;
+  }
+  input {
+    &[type=radio],
+    &[type=checkbox] {
+      display:inline-block;
+    }
+    &[type=hidden] {
+      display:none;
+    }
+  }
+  button {
+    padding: 0 $base-unit * 0.5;
+  }
+}

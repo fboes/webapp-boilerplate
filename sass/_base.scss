@@ -1,12 +1,17 @@
-$base-unit : 10px;
+$width-screen-smartphone       : 480px;
+$width-screen-tablet           : 768px;
+$width-screen-tablet-landscape : 1024px;
+$width-screen-desktop          : 1280px;
+
+$font-size-base: 10px;
+$font-size-container: 2rem;
+$font-family: 'Roboto Slab', serif;
+$font-family-header : 'Roboto', sans-serif;
+
+$base-unit : $font-size-base;
 $background-color : rgb(225,225,225);
 $background-color-content : rgb(245,245,245);
 
 $color-font : rgb(90,90,90);
 $color-font-light : rgb(180,180,180);
 $color-link: blue;
-
-$font-family: 'Roboto Slab', serif;
-$font-family-header : 'Roboto', sans-serif;
-
-$width-container : 480px;

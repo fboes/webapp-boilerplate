@@ -1,0 +1,16 @@
+#container {
+	max-width: $width-screen-tablet - (2 * $base-unit);
+	#header {
+		header {
+			max-width:$width-screen-tablet - (2 * $base-unit);
+		}
+	}
+}
+
+
+.only-smartphone,
+.no-tablet,
+.only-screen-tablet-landscape,
+.only-desktop {
+	display:none !important;
+}

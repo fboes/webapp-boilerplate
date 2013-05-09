@@ -3,11 +3,10 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Flashy title</title>
-	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700' />
 	<link rel="stylesheet" href="css/styles.css" />
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	<link rel="shortcut icon" href="favicon.ico" />
-  <meta name="viewport" content="width=480" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="robots" content="noindex" />
 </head>
 <body>
@@ -31,7 +30,22 @@
 				<div class="block">
 					<h4>Block heading</h4>
 					<form action="." method="get">
-						<label for="next">Input</label><input id="next" type="text" />
+						<span class="form-field">
+							<label for="text">text</label><input id="text" name="text" type="text" />
+						</span>
+						<span class="form-field">
+							<label for="number">number</label><input id="number" name="number" type="number" />
+						</span>
+						<span class="form-field">
+							<label for="date">date</label><input id="date" name="date"  type="date" />
+						</span>
+						<span class="form-field">
+							<label for="select">select</label><select id="select" name="select">
+								<option>Item 1</option>
+								<option>Item 1</option>
+								<option>Item 1</option>
+							</select>
+						</span>
 						<button type="submit">Submit</button>
 					</form>
 				</div>

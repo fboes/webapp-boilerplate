@@ -1,61 +1,34 @@
 @import "compass/css3/box-shadow";
 @import "base";
-@import "reset";
-@import "forms";
 
-body {
-	background:$background-color;
-	padding:$base-unit;
-	font: 22px/1.5em $font-family;
-	color: $color-font;
+// Load basic styles
+
+@import 'all';
+
+// Load media query styles
+
+@media screen {
+	@import 'screen';
+	@import 'screen_smartphone';
 }
-del {
-	color: $color-font-light;
+@media screen and (max-width: $width-screen-tablet - 1px) {
+	@import 'screen_only_smartphone';
 }
-a {
-	color: $color-link;
-	&:hover {
-		color: lighten($color-link, 10%);
-	}
+@media screen and (min-width: $width-screen-tablet) {
+	@import 'screen_tablet';
 }
-
-#container {
-	max-width:$width-container - (2 * $base-unit);
-	position:relative;
-	padding-top:(5 * $base-unit);
-	margin: 0 auto;
-
-	#header {
-		padding:$base-unit;
-		font: 120% $font-family-header;
-		position:fixed;
-		top: 0;
-		left: 0;
-		background: $background-color;
-		width:100%;
-
-		header {
-			max-width:$width-container - (2 * $base-unit);
-			margin: auto;
-	
-			.header-icon {
-				height:44px;
-				vertical-align:-12px;
-				margin-right:$base-unit;
-			}
-		}
-	}
-
-	.block {
-		background:$background-color-content;
-		margin-bottom:2*$base-unit;
-		padding:2*$base-unit;
-		@include single-box-shadow(rgba(0,0,0,0.1), 1px, $base-unit / 2, $base-unit / 2);
-
-		h4 {
-			font-size:120%;
-			margin-bottom:$base-unit;
-		}
-
-	}
+@media screen and (min-width: $width-screen-tablet) and (max-width: $width-screen-tablet-landscape - 1px) {
+	@import 'screen_only_tablet';
+}
+@media screen and (min-width: $width-screen-tablet-landscape) {
+	@import 'screen_tablet_landscape';
+}
+@media screen and (min-width: $width-screen-tablet-landscape) and (max-width: $width-screen-desktop - 1px) {
+	@import 'screen_only_tablet_landscape';
+}
+@media screen and (min-width: $width-screen-desktop) {
+	@import 'screen_desktop';
+}
+@media print {
+	@import 'print';
 }

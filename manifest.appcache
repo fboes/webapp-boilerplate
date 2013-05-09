@@ -1,10 +1,10 @@
 CACHE MANIFEST
-# 2013-05-07 17:30
+# 2013-05-07 21:30
 
 CACHE:
 #index.html
-#apple-touch-icon.png
-#favicon.ico
-#css/styles.css
-#js/jquery-2.0.0.min.js
-#js/behavior.js
+apple-touch-icon.png
+favicon.ico
+css/styles.css
+js/jquery-2.0.0.min.js
+js/behavior.js
