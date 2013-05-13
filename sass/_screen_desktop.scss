@@ -1,8 +1,12 @@
 #container {
-	max-width: $width-screen-desktop - (2 * $base-unit);
-	#header {
-		header {
-			max-width:$width-screen-desktop - (2 * $base-unit);
+	@if $switch-use-fluid == false {
+		max-width: $width-screen-desktop - (2 * $base-unit);
+	}
+	#header, #footer {
+		.inner {
+			@if $switch-use-fluid == false {
+				max-width:$width-screen-desktop - (4 * $base-unit);
+			}
 		}
 	}
 }

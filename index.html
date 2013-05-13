@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Flashy title</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="css/styles.css" />
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	<link rel="shortcut icon" href="favicon.ico" />
@@ -12,10 +13,12 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<header role="banner">
-				<a href="#"><img src="apple-touch-icon.png" alt="Home" class="header-icon" /></a>
-				Flashy title
-			</header>
+			<div class="inner">
+				<header role="banner">
+					<a href="#"><img src="apple-touch-icon.png" alt="Home" class="header-icon" /></a>
+					Flashy title
+				</header>
+			</div>
 		</div>
 		<div id="main">
 			<main role="main">
@@ -71,7 +74,9 @@
 			<aside role="complementary"><!-- --></aside>
 		</div>
 		<div id="footer">
-			<footer><!-- --></footer>
+			<div class="inner">
+				<footer>Footer</footer>
+			</div>
 		</div>
 	</div>
 	<script src="js/jquery-2.0.0.min.js"></script>

@@ -1,15 +1,26 @@
-$width-screen-smartphone       : 480px;
-$width-screen-tablet           : 768px;
-$width-screen-tablet-landscape : 1024px;
-$width-screen-desktop          : 1280px;
+// see http://developer.android.com/design/style/metrics-grids.html
 
-$font-size-base: 10px;
-$font-size-container: 2rem;
-$font-family: 'Roboto Slab', serif;
-$font-family-header : 'Roboto', sans-serif;
+$switch-use-fluid : false;
+$switch-use-fixed-controls: true;
 
-$base-unit : $font-size-base;
+$base-unit : 12px;
+
+$width-screen-smartphone       : 360px;
+$width-screen-tablet           : 600px;
+$width-screen-tablet-landscape : 962px;
+$width-screen-desktop          : 1281px;
+
+$font-size-base: $base-unit;
+$font-size-micro : 0.85rem;
+$font-size-small : 1rem;
+$font-size-medium: 1.25rem;
+$font-size-large : 1.5rem;
+
+$font-family: 'Roboto Slab', Garamond, serif;
+$font-family-header : 'Roboto', Tahoma, sans-serif;
+
 $background-color : rgb(225,225,225);
+$background-color-header : $background-color;
 $background-color-content : rgb(245,245,245);
 
 $color-font : rgb(90,90,90);
