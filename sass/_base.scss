@@ -6,7 +6,7 @@ $switch-use-dark : false;
 
 $base-unit : 12px;
 
-$width-screen-smartphone       : 360px;
+$width-screen-smartphone       : 320px;
 $width-screen-tablet           : 600px;
 $width-screen-tablet-landscape : 962px;
 $width-screen-desktop          : 1281px;
@@ -20,13 +20,32 @@ $font-size-large : 1.5rem;
 $font-family: 'Roboto Slab', Garamond, serif;
 $font-family-header : 'Roboto', Tahoma, sans-serif;
 
+// Basic colors
+// See http://developer.android.com/design/style/color.html
+
+$color-blue: #33b5e5;
+$color-blue-dark: #0099CC;
+$color-purple: #AA66CC;
+$color-purple-dark: #9933CC;
+$color-green: #99cc00;
+$color-green-dark: #669900;
+$color-yellow: #FFBB33;
+$color-yellow-dark: #FF8800;
+$color-red: #FF4444;
+$color-red-dark: #CC0000;
+
+// Color -> Function
+
 $background-color : rgb(225,225,225);
 $background-color-header : $background-color;
 $background-color-content : rgb(245,245,245);
 
 $color-font : rgb(90,90,90);
 $color-font-light : rgb(180,180,180);
-$color-link: blue;
+$color-highlight: $color-green;
+$color-link: $color-green-dark;
+
+// Dark theme
 
 @if $switch-use-dark {
 	$font-family: $font-family-header;
@@ -37,5 +56,6 @@ $color-link: blue;
 
 	$color-font : rgb(255,255,255);
 	$color-font-light : rgb(200,200,200);
-	$color-link: blue;
+	$color-highlight: $color-blue;
+	$color-link: $color-blue-dark;
 }

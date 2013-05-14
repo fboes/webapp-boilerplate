@@ -1,0 +1,5 @@
+# This is completely private
+# Use 'Disallow:' for allowing robots to crawl this page
+
+User-agent: *
+Disallow: /

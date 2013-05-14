@@ -7,7 +7,10 @@ var Application = {
 	},
 	init : function () {
 		this.elements.container = $('#container');
+		console.log("Application started");
 	}
 }
 
-Application.init();
+$(document).ready(function() {
+	Application.init();
+}
