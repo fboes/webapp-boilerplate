@@ -10,18 +10,18 @@ form input[type=radio], form input[type=checkbox] { display: inline-block; }
 form input[type=hidden] { display: none; }
 form button { padding: 0 6px; }
 
-@media screen { body { background: #e1e1e1; padding: 12px; font: 1.25rem "Roboto Slab", Garamond, serif; line-height: 1.5em; color: #5a5a5a; }
-  del { color: #b4b4b4; }
+@media screen { body { background: black; padding: 12px; font: 1.25rem "Roboto", Tahoma, sans-serif; line-height: 1.5em; color: white; }
+  del { color: #c8c8c8; }
   a { color: blue; }
   a:hover { color: #3333ff; }
   #container { position: relative; margin: 0 auto; }
-  #container #header, #container #footer { background: #e1e1e1; height: 48px; position: fixed; left: 0; width: 100%; }
+  #container #header, #container #footer { background: black; height: 48px; position: fixed; left: 0; width: 100%; }
   #container #header .inner, #container #footer .inner { padding: 6px 12px; margin: auto; }
   #container #header { font: 1.5rem "Roboto", Tahoma, sans-serif; overflow: hidden; top: 0; }
   #container #header .header-icon { height: 36px; vertical-align: -12px; margin-right: 12px; }
   #container #footer { text-align: right; bottom: 0; }
   #container #main { margin: 48px 0; }
-  #container #main .block { background: whitesmoke; margin-bottom: 12px; padding: 18px; -webkit-box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.1); box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.1); }
+  #container #main .block { background: #0a0a0a; margin-bottom: 12px; padding: 18px; -webkit-box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.1); box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.1); }
   #container #main .block h4 { font-size: 1.5rem; margin-bottom: 12px; }
   #container { max-width: 336px; }
   #container #header .inner, #container #footer .inner { max-width: 312px; }
