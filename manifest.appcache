@@ -1,16 +1,20 @@
 CACHE MANIFEST
 # 2013-05-15 20:00
+# See http://www.w3.org/TR/2011/WD-html5-20110525/offline.html#manifests
+# Some lines have been commented for development purposes. For production enviroment remove comments
 
 CACHE:
 #index.html
 apple-touch-icon.png
 favicon.ico
 //fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700
+//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css
 css/styles.css
-js/behaviour.js
+#js/behaviour.js
 //ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js
 
-#NETWORK:
-
-
 #FALLBACK:
+#...
+
+#NETWORK:
+#...

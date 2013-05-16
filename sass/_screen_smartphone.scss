@@ -1,11 +1,11 @@
 #container {
 	@if $switch-use-fluid == false {
-		max-width: $width-screen-smartphone - (2 * $base-unit);
+		max-width: $width-screen-smartphone - (2 * $base-unit-px);
 	}
 	#header, #footer {
 		.inner {
 			@if $switch-use-fluid == false {
-				max-width:$width-screen-smartphone - (4 * $base-unit);
+				max-width:$width-screen-smartphone - (4 * $base-unit-px);
 			}
 		}
 	}

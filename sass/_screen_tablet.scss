@@ -1,11 +1,11 @@
 #container {
 	@if $switch-use-fluid == false {
-		max-width: $width-screen-tablet - (2 * $base-unit);
+		max-width: $width-screen-tablet - (2 * $base-unit-px);
 	}
 	#header, #footer {
 		.inner {
 			@if $switch-use-fluid == false {
-				max-width:$width-screen-tablet - (4 * $base-unit);
+				max-width:$width-screen-tablet - (4 * $base-unit-px);
 			}
 		}
 	}

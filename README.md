@@ -6,6 +6,7 @@ Simple boilerplate for small webapps. This includes responsive design via [SASS]
 How to improve
 --------------
 
+* Download [Font Awesome](http://fontawesome.io/) locally to /css/vendor
 * Download [jQuery 2.0.0](http://jquery.com/) locally to /js/vendor
 * Add some touch gesture support (e.g. via [jQuery.event.swipe](http://stephband.info/jquery.event.swipe/))
 

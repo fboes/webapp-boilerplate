@@ -1,17 +1,18 @@
 // see http://developer.android.com/design/style/metrics-grids.html
 
 $switch-use-fluid : false;
-$switch-use-fixed-controls: true;
 $switch-use-dark : false;
+$switch-fixed-header : true;
+$switch-fixed-footer : false;
 
-$base-unit : 12px;
+$base-unit-px : 12px;
+$base-unit: 1rem;
 
 $width-screen-smartphone       : 320px;
-$width-screen-tablet           : 600px;
-$width-screen-tablet-landscape : 962px;
-$width-screen-desktop          : 1281px;
+$width-screen-tablet           : 768px;
+$width-screen-tablet-landscape : 1024px;
+$width-screen-desktop          : 1280px;
 
-$font-size-base: $base-unit;
 $font-size-micro : 0.85rem;
 $font-size-small : 1rem;
 $font-size-medium: 1.25rem;

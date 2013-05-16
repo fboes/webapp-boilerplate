@@ -22,11 +22,6 @@ a {
 	#header, #footer {
 		background: $background-color-header;
 		height: 4 * $base-unit;
-		@if $switch-use-fixed-controls {
-			position:fixed;
-			left: 0;
-			width:100%;
-		}
 		.inner {
 			padding:0.5 * $base-unit $base-unit;
 			margin: auto;
@@ -36,7 +31,10 @@ a {
 	#header {
 		font: $font-size-large $font-family-header;
 		overflow:hidden;
-		@if $switch-use-fixed-controls {
+		@if $switch-fixed-header {
+			position:fixed;
+			left: 0;
+			width:100%;
 			top: 0;
 		}
 
@@ -48,13 +46,19 @@ a {
 	}
 	#footer {
 		text-align:right;
-		@if $switch-use-fixed-controls {
+		@if $switch-fixed-footer {
+			position:fixed;
+			left: 0;
+			width:100%;
 			bottom: 0;
 		}
 	}
 	#main {
-		@if $switch-use-fixed-controls {
-			margin:(4 * $base-unit) 0;
+		@if $switch-fixed-header {
+			margin-top:(4 * $base-unit);
+		}
+		@if $switch-fixed-footer {
+			margin-bottom:(4 * $base-unit);
 		}
 		.block {
 			background:$background-color-content;

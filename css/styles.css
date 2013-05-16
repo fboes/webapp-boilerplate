@@ -4,36 +4,36 @@ ul { margin-left: 30px; }
 
 html { font-size: 12px; }
 
-form .form-field { display: block; margin-bottom: 12px; }
+form .form-field { display: block; margin-bottom: 1rem; }
 form label, form button, form input, form select, form textarea { font: inherit; display: block; width: 100%; }
 form input[type=radio], form input[type=checkbox] { display: inline-block; }
 form input[type=hidden] { display: none; }
-form button { padding: 0 6px; }
+form button { padding: 0 0.5rem; }
 
-@media screen { body { background: #e1e1e1; padding: 12px; font: 1.25rem "Roboto Slab", Garamond, serif; line-height: 1.5em; color: #5a5a5a; }
+@media screen { body { background: #e1e1e1; padding: 1rem; font: 1.25rem "Roboto Slab", Garamond, serif; line-height: 1.5em; color: #5a5a5a; }
   del { color: #b4b4b4; }
   a { color: #669900; }
   a:hover { color: #88cc00; }
   #container { position: relative; margin: 0 auto; }
-  #container #header, #container #footer { background: #e1e1e1; height: 48px; position: fixed; left: 0; width: 100%; }
-  #container #header .inner, #container #footer .inner { padding: 6px 12px; margin: auto; }
-  #container #header { font: 1.5rem "Roboto", Tahoma, sans-serif; overflow: hidden; top: 0; }
-  #container #header .header-icon { height: 36px; vertical-align: -12px; margin-right: 12px; }
-  #container #footer { text-align: right; bottom: 0; }
-  #container #main { margin: 48px 0; }
-  #container #main .block { background: whitesmoke; margin-bottom: 12px; padding: 18px; -webkit-box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.1); box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.1); }
-  #container #main .block h4 { font-size: 1.5rem; margin-bottom: 12px; }
+  #container #header, #container #footer { background: #e1e1e1; height: 4rem; }
+  #container #header .inner, #container #footer .inner { padding: 0.5rem 1rem; margin: auto; }
+  #container #header { font: 1.5rem "Roboto", Tahoma, sans-serif; overflow: hidden; position: fixed; left: 0; width: 100%; top: 0; }
+  #container #header .header-icon { height: 3rem; vertical-align: -1rem; margin-right: 1rem; }
+  #container #footer { text-align: right; }
+  #container #main { margin-top: 4rem; }
+  #container #main .block { background: whitesmoke; margin-bottom: 1rem; padding: 1.5rem; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
+  #container #main .block h4 { font-size: 1.5rem; margin-bottom: 1rem; }
   #container { max-width: 296px; }
   #container #header .inner, #container #footer .inner { max-width: 272px; }
   .no-smartphone, .only-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
-@media screen and (min-width: 600px) { #container { max-width: 576px; }
-  #container #header .inner, #container #footer .inner { max-width: 552px; }
+@media screen and (min-width: 768px) { #container { max-width: 744px; }
+  #container #header .inner, #container #footer .inner { max-width: 720px; }
   .only-smartphone, .no-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
-@media screen and (min-width: 962px) { #container { max-width: 938px; }
-  #container #header .inner, #container #footer .inner { max-width: 914px; }
+@media screen and (min-width: 1024px) { #container { max-width: 1000px; }
+  #container #header .inner, #container #footer .inner { max-width: 976px; }
   .only-smartphone, .only-tablet, .no-screen-tablet-landscape, .only-desktop { display: none !important; } }
-@media screen and (min-width: 1281px) { #container { max-width: 1257px; }
-  #container #header .inner, #container #footer .inner { max-width: 1233px; }
+@media screen and (min-width: 1280px) { #container { max-width: 1256px; }
+  #container #header .inner, #container #footer .inner { max-width: 1232px; }
   .only-smartphone, .only-tablet, .only-screen-tablet-landscape, .no-desktop { display: none !important; } }
 @media print { * { background: transparent !important; color: black !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
   @page { margin: 0.5cm; }
