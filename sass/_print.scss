@@ -24,7 +24,9 @@ img {
 // -----------------------------------------------------------------
 // Page
 
-#header {
+html {
+  font-size: $base-unit-absolute-print;
+}#header {
 	// insert stuff here
 }
 #nav {

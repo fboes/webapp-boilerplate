@@ -1,11 +1,15 @@
+html {
+  font-size: $base-unit-absolute-tablet;
+}
+
 #container {
 	@if $switch-use-fluid == false {
-		max-width: $width-screen-tablet - (2 * $base-unit-px);
+		max-width: $width-screen-tablet - (2 * $base-unit-absolute-tablet);
 	}
 	#header, #footer {
 		.inner {
 			@if $switch-use-fluid == false {
-				max-width:$width-screen-tablet - (4 * $base-unit-px);
+				max-width:$width-screen-tablet - (4 * $base-unit-absolute-tablet);
 			}
 		}
 	}

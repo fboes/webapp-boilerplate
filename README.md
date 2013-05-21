@@ -10,6 +10,12 @@ How to improve
 * Download [jQuery 2.0.0](http://jquery.com/) locally to /js/vendor
 * Add some touch gesture support (e.g. via [jQuery.event.swipe](http://stephband.info/jquery.event.swipe/))
 
+What to expect
+--------------
+
+* More styling for basic stuff
+* Improved styling for bigger screens
+
 Webbapp-Boilerplate license
 ----------------------------
 

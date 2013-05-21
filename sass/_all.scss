@@ -1,7 +1,7 @@
 @import "reset";
 
 html {
-  font-size: $base-unit-px;
+  font-size: $base-unit-absolute;
 }
 
 form {
@@ -16,7 +16,7 @@ form {
   textarea {
     font:inherit;
     display:block;
-    width:100%;
+    padding: 0.5 * $base-unit;
   }
   input {
     &[type=radio],

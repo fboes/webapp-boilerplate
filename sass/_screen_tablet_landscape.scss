@@ -1,11 +1,15 @@
+html {
+  font-size: $base-unit-absolute-tablet-landscape;
+}
+
 #container {
 	@if $switch-use-fluid == false {
-		max-width: $width-screen-tablet-landscape - (2 * $base-unit-px);
+		max-width: $width-screen-tablet-landscape - (2 * $base-unit-absolute-tablet-landscape);
 	}
 	#header, #footer {
 		.inner {
 			@if $switch-use-fluid == false {
-				max-width:$width-screen-tablet-landscape - (4 * $base-unit-px);
+				max-width:$width-screen-tablet-landscape - (4 * $base-unit-absolute-tablet-landscape);
 			}
 		}
 	}

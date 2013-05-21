@@ -1,11 +1,15 @@
+html {
+  font-size: $base-unit-absolute-smartphone;
+}
+
 #container {
 	@if $switch-use-fluid == false {
-		max-width: $width-screen-smartphone - (2 * $base-unit-px);
+		max-width: $width-screen-smartphone - (2 * $base-unit-absolute-smartphone);
 	}
 	#header, #footer {
 		.inner {
 			@if $switch-use-fluid == false {
-				max-width:$width-screen-smartphone - (4 * $base-unit-px);
+				max-width:$width-screen-smartphone - (4 * $base-unit-absolute-smartphone);
 			}
 		}
 	}

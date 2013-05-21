@@ -20,7 +20,7 @@ a {
 	margin: 0 auto;
 
 	#header, #footer {
-		background: $background-color-header;
+		background: rgba($background-color-header, 0.9);
 		height: 4 * $base-unit;
 		.inner {
 			padding:0.5 * $base-unit $base-unit;

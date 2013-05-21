@@ -1,7 +1,7 @@
 CACHE MANIFEST
-# 2013-05-15 20:00
+# 2013-05-21 18:00
 # See http://www.w3.org/TR/2011/WD-html5-20110525/offline.html#manifests
-# Some lines have been commented for development purposes. For production enviroment remove comments
+# Some lines have been commented for development purposes. For production environment remove comments
 
 CACHE:
 #index.html
@@ -16,5 +16,5 @@ css/styles.css
 #FALLBACK:
 #...
 
-#NETWORK:
-#...
+NETWORK:
+*

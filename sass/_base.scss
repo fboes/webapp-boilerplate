@@ -5,7 +5,13 @@ $switch-use-dark : false;
 $switch-fixed-header : true;
 $switch-fixed-footer : false;
 
-$base-unit-px : 12px;
+$base-unit-absolute : 12px;
+$base-unit-absolute-smartphone       : round($base-unit-absolute);
+$base-unit-absolute-tablet           : round($base-unit-absolute);
+$base-unit-absolute-tablet-landscape : round($base-unit-absolute * 1.1);
+$base-unit-absolute-desktop          : round($base-unit-absolute * 1.2);
+$base-unit-absolute-print            : 10pt;
+
 $base-unit: 1rem;
 
 $width-screen-smartphone       : 320px;
@@ -43,8 +49,8 @@ $background-color-content : rgb(245,245,245);
 
 $color-font : rgb(90,90,90);
 $color-font-light : rgb(180,180,180);
-$color-highlight: $color-green;
-$color-link: $color-green-dark;
+$color-highlight: $color-blue;
+$color-link: $color-blue-dark;
 
 // Dark theme
 
