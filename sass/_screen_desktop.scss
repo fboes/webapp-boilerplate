@@ -4,12 +4,12 @@ html {
 
 #container {
 	@if $switch-use-fluid == false {
-		max-width: $width-screen-desktop - (2 * $base-unit-absolute-desktop);
+		max-width: toolshed-rem($width-screen-desktop, $base-unit-absolute-desktop, -2);
 	}
 	#header, #footer {
 		.inner {
 			@if $switch-use-fluid == false {
-				max-width:$width-screen-desktop - (4 * $base-unit-absolute-desktop);
+				max-width: toolshed-rem($width-screen-desktop, $base-unit-absolute-desktop, -4);
 			}
 		}
 	}

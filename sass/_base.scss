@@ -8,8 +8,8 @@ $switch-fixed-footer : false;
 $base-unit-absolute : 12px;
 $base-unit-absolute-smartphone       : round($base-unit-absolute);
 $base-unit-absolute-tablet           : round($base-unit-absolute);
-$base-unit-absolute-tablet-landscape : round($base-unit-absolute * 1.1);
-$base-unit-absolute-desktop          : round($base-unit-absolute * 1.2);
+$base-unit-absolute-tablet-landscape : round($base-unit-absolute * 1.25);
+$base-unit-absolute-desktop          : round($base-unit-absolute * 1.5);
 $base-unit-absolute-print            : 10pt;
 
 $base-unit: 1rem;
@@ -30,25 +30,34 @@ $font-family-header : 'Roboto', Tahoma, sans-serif;
 // Basic colors
 // See http://developer.android.com/design/style/color.html
 
-$color-blue: #33b5e5;
-$color-blue-dark: #0099CC;
-$color-purple: #AA66CC;
-$color-purple-dark: #9933CC;
-$color-green: #99cc00;
-$color-green-dark: #669900;
-$color-yellow: #FFBB33;
-$color-yellow-dark: #FF8800;
-$color-red: #FF4444;
-$color-red-dark: #CC0000;
+$color-white:         rgb(255,255,255);
+$color-black:         rgb(90,90,90);
+$color-grey:          mix($color-white, $color-black, 80%); //rgb(225,225,225);
+$color-grey-dark:     mix($color-white, $color-black, 55%); //rgb(180,180,180);
+$color-grey-light:    mix($color-white, $color-black, 95%); //rgb(245,245,245);
+$color-blue:          #33b5e5;
+$color-blue-dark:     darken($color-blue, 25%);
+$color-blue-light:    lighten($color-blue, 15%);
+$color-purple:        #AA66CC;
+$color-purple-dark:   darken($color-purple, 25%);
+$color-purple-light:  lighten($color-purple, 15%);
+$color-green:         #99cc00;
+$color-green-dark:    darken($color-green, 25%);
+$color-green-light:   lighten($color-green, 15%);
+$color-yellow:        #FFBB33;
+$color-yellow-dark:   darken($color-yellow, 25%);
+$color-yellow-light:  lighten($color-yellow, 15%);
+$color-red:           #FF4444;
+$color-red-dark:      darken($color-red, 25%);
+$color-red-light:     lighten($color-red, 15%);
 
 // Color -> Function
 
-$background-color : rgb(225,225,225);
-$background-color-header : $background-color;
-$background-color-content : rgb(245,245,245);
-
-$color-font : rgb(90,90,90);
-$color-font-light : rgb(180,180,180);
+$background-color: $color-grey;
+$background-color-header: $background-color;
+$background-color-content: $color-grey-light;
+$color-font: $color-black;
+$color-font-light: $color-grey-dark;
 $color-highlight: $color-blue;
 $color-link: $color-blue-dark;
 

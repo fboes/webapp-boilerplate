@@ -4,40 +4,50 @@ ul { margin-left: 30px; }
 
 html { font-size: 12px; }
 
-form .form-field { display: block; margin-bottom: 1rem; }
-form label, form button, form input, form select, form textarea { font: inherit; display: block; padding: 0.5rem; }
-form input[type=radio], form input[type=checkbox] { display: inline-block; }
-form input[type=hidden] { display: none; }
-form button { padding: 0 0.5rem; }
+.form-field { display: block; margin-bottom: 1rem; }
 
-@media screen { body { background: #e1e1e1; padding: 1rem; font: 1.25rem "Roboto Slab", Garamond, serif; line-height: 1.5em; color: #5a5a5a; }
+label, button, input, select, textarea { font: inherit; color: inherit; display: block; padding: 0.5rem 2%; width: 96%; }
+
+input[type=radio], input[type=checkbox] { display: inline-block; width: auto; padding: 0; margin: 0 0.5rem 0 0; }
+input[type=hidden] { display: none; }
+
+button, select { width: 100%; }
+
+button { padding: 0 2%; }
+
+.no-styling { display: inline-block; width: auto; margin: 0; padding: 0; background: transparent; border: none; }
+
+@media screen { body { background: #dedede; padding: 1rem; font: 1.25rem "Roboto Slab", Garamond, serif; line-height: 1.5em; color: #5a5a5a; }
   del { color: #b4b4b4; }
-  a { color: #0099cc; }
-  a:hover { color: deepskyblue; }
+  a { color: #116787; }
+  a:hover { color: #178ab4; }
   #container { position: relative; margin: 0 auto; }
-  #container #header, #container #footer { background: rgba(225, 225, 225, 0.9); height: 4rem; }
+  #container #header, #container #footer { background: rgba(222, 222, 222, 0.9); height: 4rem; }
   #container #header .inner, #container #footer .inner { padding: 0.5rem 1rem; margin: auto; }
   #container #header { font: 1.5rem "Roboto", Tahoma, sans-serif; overflow: hidden; position: fixed; left: 0; width: 100%; top: 0; }
   #container #header .header-icon { height: 3rem; vertical-align: -1rem; margin-right: 1rem; }
   #container #footer { text-align: right; }
   #container #main { margin-top: 4rem; }
-  #container #main .block { background: whitesmoke; margin-bottom: 1rem; padding: 1.5rem; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
+  #container #main .block { background: #f6f6f6; margin-bottom: 1rem; padding: 1.5rem; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
   #container #main .block h4 { font-size: 1.5rem; margin-bottom: 1rem; }
   html { font-size: 12px; }
-  #container { max-width: 296px; }
-  #container #header .inner, #container #footer .inner { max-width: 272px; }
+  #container { max-width: 24.66667rem; }
+  #container #header .inner, #container #footer .inner { max-width: 22.66667rem; }
   .no-smartphone, .only-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 768px) { html { font-size: 12px; }
-  #container { max-width: 744px; }
-  #container #header .inner, #container #footer .inner { max-width: 720px; }
+  #container { max-width: 62rem; }
+  #container #header .inner, #container #footer .inner { max-width: 60rem; }
+  #container #main { zoom: 1; }
+  #container #main:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
+  #container #main .block-container { width: 48%; margin: 0 1%; float: left; }
   .only-smartphone, .no-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
-@media screen and (min-width: 1024px) { html { font-size: 13px; }
-  #container { max-width: 998px; }
-  #container #header .inner, #container #footer .inner { max-width: 972px; }
+@media screen and (min-width: 1024px) { html { font-size: 15px; }
+  #container { max-width: 66.26667rem; }
+  #container #header .inner, #container #footer .inner { max-width: 64.26667rem; }
   .only-smartphone, .only-tablet, .no-screen-tablet-landscape, .only-desktop { display: none !important; } }
-@media screen and (min-width: 1280px) { html { font-size: 14px; }
-  #container { max-width: 1252px; }
-  #container #header .inner, #container #footer .inner { max-width: 1224px; }
+@media screen and (min-width: 1280px) { html { font-size: 18px; }
+  #container { max-width: 69.11111rem; }
+  #container #header .inner, #container #footer .inner { max-width: 67.11111rem; }
   .only-smartphone, .only-tablet, .only-screen-tablet-landscape, .no-desktop { display: none !important; } }
 @media print { * { background: transparent !important; color: black !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
   @page { margin: 0.5cm; }

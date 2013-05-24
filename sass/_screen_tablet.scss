@@ -4,13 +4,21 @@ html {
 
 #container {
 	@if $switch-use-fluid == false {
-		max-width: $width-screen-tablet - (2 * $base-unit-absolute-tablet);
+		max-width: toolshed-rem($width-screen-tablet, $base-unit-absolute-tablet, -2);
 	}
 	#header, #footer {
 		.inner {
 			@if $switch-use-fluid == false {
-				max-width:$width-screen-tablet - (4 * $base-unit-absolute-tablet);
+				max-width: toolshed-rem($width-screen-tablet, $base-unit-absolute-tablet, -4);
 			}
+		}
+	}
+	#main {
+		@include clearfix();
+		.block-container {
+			width:48%;
+			margin:0 1%;
+			float:left;
 		}
 	}
 }

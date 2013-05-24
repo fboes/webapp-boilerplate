@@ -4,30 +4,46 @@ html {
   font-size: $base-unit-absolute;
 }
 
-form {
-  .form-field {
-    display:block;
-    margin-bottom: $base-unit;
+// Form
+.form-field {
+  display:block;
+  margin-bottom: $base-unit;
+}
+label,
+button,
+input,
+select,
+textarea {
+  font:inherit;
+  color:inherit;
+  display:block;
+  padding: 0.5 * $base-unit 2%;
+  width: 96%;
+}
+input {
+  &[type=radio],
+  &[type=checkbox] {
+    display:inline-block;
+    width:auto;
+    padding:0;
+    margin: 0 0.5 * $base-unit 0 0;
   }
-  label,
-  button,
-  input,
-  select,
-  textarea {
-    font:inherit;
-    display:block;
-    padding: 0.5 * $base-unit;
+  &[type=hidden] {
+    display:none;
   }
-  input {
-    &[type=radio],
-    &[type=checkbox] {
-      display:inline-block;
-    }
-    &[type=hidden] {
-      display:none;
-    }
-  }
-  button {
-    padding: 0 $base-unit * 0.5;
-  }
+}
+button,
+select {
+  width:100%;
+}
+button {
+  padding: 0 2%;
+}
+.no-styling {
+  display:inline-block;
+  width:auto;
+  margin:0;
+  padding:0;
+  background:transparent;
+  border:none;
 }
