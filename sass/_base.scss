@@ -1,9 +1,12 @@
-// see http://developer.android.com/design/style/metrics-grids.html
+// Settings
 
 $switch-use-fluid : false;
 $switch-use-dark : false;
 $switch-fixed-header : true;
 $switch-fixed-footer : false;
+
+// Base canon (Responsive)
+// See http://developer.android.com/design/style/metrics-grids.html
 
 $base-unit-absolute : 12px;
 $base-unit-absolute-smartphone       : round($base-unit-absolute);
@@ -19,15 +22,7 @@ $width-screen-tablet           : 768px;
 $width-screen-tablet-landscape : 1024px;
 $width-screen-desktop          : 1280px;
 
-$font-size-micro : 0.85rem;
-$font-size-small : 1rem;
-$font-size-medium: 1.25rem;
-$font-size-large : 1.5rem;
-
-$font-family: 'Roboto Slab', Garamond, serif;
-$font-family-header : 'Roboto', Tahoma, sans-serif;
-
-// Basic colors
+// Colors
 // See http://developer.android.com/design/style/color.html
 
 $color-white:         rgb(255,255,255);
@@ -51,15 +46,28 @@ $color-red:           #FF4444;
 $color-red-dark:      darken($color-red, 25%);
 $color-red-light:     lighten($color-red, 15%);
 
-// Color -> Function
+// Colors -> Function
 
 $background-color: $color-grey;
 $background-color-header: $background-color;
 $background-color-content: $color-grey-light;
+$background-color-form-input: $color-white;
 $color-font: $color-black;
 $color-font-light: $color-grey-dark;
 $color-highlight: $color-blue;
 $color-link: $color-blue-dark;
+$border-color-form-input: $color-grey;
+
+// Typography
+
+$font-size-micro : 0.85rem;
+$font-size-small : 1rem;
+$font-size-medium: 1.25rem;
+$font-size-large : 1.5rem;
+
+$font-family: 'Roboto Slab', Garamond, serif;
+$font-family-header : 'Roboto', Tahoma, sans-serif;
+
 
 // Dark theme
 
