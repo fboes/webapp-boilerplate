@@ -1,0 +1,14 @@
+{
+	"name": "Flashy title",
+	"description": "Flashy description",
+	"launch_path": "/",
+	"icons": {
+		"48" : "/favicon.ico",
+		"128": "/favicon.png"
+	},
+	"developer": {
+		"name": "Flashy developer",
+		"url": "http://your-homepage-here.org"
+	},
+	"default_locale": "en"
+}

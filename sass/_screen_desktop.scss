@@ -1,14 +1,14 @@
 html {
-  font-size: $base-unit-absolute-desktop;
+	font-size: $base-unit-absolute-desktop;
 }
 
 #container {
-	@if $switch-use-fluid == false {
+	@if not $switch-use-fluid {
 		max-width: toolshed-rem($width-screen-desktop, $base-unit-absolute-desktop, -2);
 	}
 	#header, #footer {
 		.inner {
-			@if $switch-use-fluid == false {
+			@if not $switch-use-fluid {
 				max-width: toolshed-rem($width-screen-desktop, $base-unit-absolute-desktop, -4);
 			}
 		}
