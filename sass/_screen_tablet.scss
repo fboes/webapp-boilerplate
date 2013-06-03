@@ -15,7 +15,8 @@ html {
 	}
 	#main {
 		@include clearfix();
-		.block-container {
+		.block-container,
+		.block-container-3 {
 			width:48%;
 			margin:0 1%;
 			float:left;

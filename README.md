@@ -11,21 +11,27 @@ To build your app, this boilerplate is configured to use [jQuery 2.0.0](http://j
 
 For deployment as an offline app a [cache manifest](https://developer.mozilla.org/en/docs/HTML/Using_the_application_cache) and a [Mozilla App Manifest](https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest) has been added.
 
+And there is also some basic support for [The Open Graph Protocol](http://ogp.me/).
+
 So all the cool stuff is here. :)
 
 Setup
 -----
 
-1. Replace "Flashy title" in all files with the name of your app
-2. Replace "Flashy description" in all files with the description of your app
-3. Replace favicon.ico (48×48px),  favicon.png (128×128px) and apple-touch-icon.png (144×144px) with your icon
-4. Start coding!
+1. Replace "`Flashy title`" in all files with the name of your app
+2. Replace "`Flashy description`" in all files with the description of your app
+3. Replace "`Flashy company`" with your name
+4. Replace "`http://flashy-url.org/`" with your URL
+5. Replace `favicon.ico` (48×48px),  `favicon.png` (128×128px) and `apple-touch-icon.png` (144×144px) with your icon
+6. Optional: Replace "`en`" with your desired locale
+7. Start coding!
+8 Activate caching in index.html by commenting line 2 & uncommenting line 3.
 
 Things you may want to do
 -------------------------
 
-* Download [Font Awesome](http://fontawesome.io/) locally to /css/vendor
-* Download [jQuery 2.0.0](http://jquery.com/) locally to /js/vendor
+* Download [Font Awesome](http://fontawesome.io/) locally to `/css/vendor`, replacing it in `index.html` and `manifest.appcache`
+* Download [jQuery 2.0.0](http://jquery.com/) locally to `/js/vendor`, replacing it in `index.html` and `manifest.appcache`
 * Add some touch gesture support (e.g. via [jQuery.event.swipe](http://stephband.info/jquery.event.swipe/))
 
 What to expect

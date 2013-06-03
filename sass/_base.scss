@@ -1,9 +1,10 @@
 // Settings
 
-$switch-use-fluid : false;
-$switch-use-dark : false;
-$switch-fixed-header : true;
-$switch-fixed-footer : false;
+$switch-use-fluid      : false;
+$switch-use-dark       : false;
+$switch-use-navigation : true;
+$switch-fixed-header   : true;
+$switch-fixed-footer   : false;
 
 // Base canon (Responsive)
 // See http://developer.android.com/design/style/metrics-grids.html
@@ -25,26 +26,26 @@ $width-screen-desktop          : 1280px;
 // Colors
 // See http://developer.android.com/design/style/color.html
 
-$color-white:         rgb(255,255,255);
-$color-black:         rgb(90,90,90);
-$color-grey:          mix($color-white, $color-black, 80%); //rgb(225,225,225);
-$color-grey-dark:     mix($color-white, $color-black, 55%); //rgb(180,180,180);
-$color-grey-light:    mix($color-white, $color-black, 95%); //rgb(245,245,245);
-$color-blue:          #33b5e5;
-$color-blue-dark:     darken($color-blue, 25%);
-$color-blue-light:    lighten($color-blue, 15%);
-$color-purple:        #AA66CC;
-$color-purple-dark:   darken($color-purple, 25%);
-$color-purple-light:  lighten($color-purple, 15%);
-$color-green:         #99cc00;
-$color-green-dark:    darken($color-green, 25%);
-$color-green-light:   lighten($color-green, 15%);
-$color-yellow:        #FFBB33;
-$color-yellow-dark:   darken($color-yellow, 25%);
-$color-yellow-light:  lighten($color-yellow, 15%);
-$color-red:           #FF4444;
-$color-red-dark:      darken($color-red, 25%);
-$color-red-light:     lighten($color-red, 15%);
+$color-white:        rgb(255,255,255);
+$color-black:        rgb(90,90,90);
+$color-grey:         mix($color-white, $color-black, 80%); //rgb(225,225,225);
+$color-grey-dark:    mix($color-white, $color-black, 55%); //rgb(180,180,180);
+$color-grey-light:   mix($color-white, $color-black, 95%); //rgb(245,245,245);
+$color-blue:         #33b5e5;
+$color-blue-dark:    darken($color-blue, 25%);
+$color-blue-light:   lighten($color-blue, 15%);
+$color-purple:       #AA66CC;
+$color-purple-dark:  darken($color-purple, 25%);
+$color-purple-light: lighten($color-purple, 15%);
+$color-green:        #99cc00;
+$color-green-dark:   darken($color-green, 25%);
+$color-green-light:  lighten($color-green, 15%);
+$color-yellow:       #FFBB33;
+$color-yellow-dark:  darken($color-yellow, 25%);
+$color-yellow-light: lighten($color-yellow, 15%);
+$color-red:          #FF4444;
+$color-red-dark:     darken($color-red, 25%);
+$color-red-light:    lighten($color-red, 15%);
 
 // Colors -> Function
 
@@ -60,10 +61,10 @@ $border-color-form-input: $color-grey;
 
 // Typography
 
-$font-size-micro : 0.85rem;
-$font-size-small : 1rem;
-$font-size-medium: 1.25rem;
-$font-size-large : 1.5rem;
+$font-size-micro  : 0.85rem;
+$font-size-small  : 1rem;
+$font-size-medium : 1.25rem;
+$font-size-large  : 1.5rem;
 
 $font-family: 'Roboto Slab', Garamond, serif;
 $font-family-header : 'Roboto', Tahoma, sans-serif;

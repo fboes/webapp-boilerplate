@@ -1,19 +1,24 @@
 <!doctype html>
-<!--html lang="en"-->
-<html manifest="manifests/manifest.appcache" lang="en">
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<!--html prefix="og: http://ogp.me/ns#" manifest="manifests/manifest.appcache" lang="en"-->
 <head>
 	<meta charset="UTF-8" />
 	<title>Flashy title</title>
 	<link href="//fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700" rel="stylesheet" />
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="icon" sizes="144x144" href="apple-touch-icon.png" />
 	<link rel="icon" sizes="128x128" href="favicon.png" />
 	<link rel="icon" sizes="48x48" href="favicon.ico" />
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	<link rel="shortcut icon" href="favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Flashy description" />
+	<meta property="og:title" content="Flashy title" />
+	<meta property="og:description" content="Flashy description" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://flashy-url.org/" />
+	<meta property="og:image" content="http://flashy-url.org/apple-touch-icon.png" />
 </head>
 <body>
 	<div id="container">
@@ -21,15 +26,21 @@
 			<div class="inner">
 				<header role="banner">
 					<a href="#"><img src="apple-touch-icon.png" alt="Home" class="header-icon" /></a>
-					Flashy title
+					<h1>Flashy title</h1>
 				</header>
+				<nav role="navigation">
+					<ul class="nav">
+						<li><a href="#"><i class="icon-ellipsis-vertical"></i> <span class="icon-hide">Menu</span></a></li>
+						<li><a href="#"><i class="icon-search"></i> <span class="icon-hide">Search</span></a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 		<div id="main">
 			<main role="main">
 				<div class="block-container">
 					<div class="block">
-						<h4>Block heading</h4>
+						<h3>Block heading</h3>
 						<ul>
 							<li>List item 1</li>
 							<li><a href="#">List item 2</a></li>
@@ -40,7 +51,7 @@
 						</ul>
 					</div>
 					<div class="block">
-						<h4>Block heading</h4>
+						<h3>Block heading</h3>
 						<form action="." method="get">
 							<span class="form-field">
 								<label for="text">text</label><input id="text" name="text" type="text" />
@@ -67,7 +78,7 @@
 				</div>
 				<div class="block-container">
 					<div class="block">
-						<h4>Block heading</h4>
+						<h3>Block heading</h3>
 						<form action="." method="get">
 							<span class="form-field">
 								<label for="range">range</label><input id="range" name="range" type="range" />
@@ -100,7 +111,7 @@
 						</form>
 					</div>
 					<div class="block">
-						<h4>Block heading</h4>
+						<h3>Block heading</h3>
 						<ul>
 							<li>List item 1</li>
 							<li><a href="#">List item 2</a></li>
@@ -108,7 +119,7 @@
 						</ul>
 					</div>
 					<div class="block">
-						<h4>Block heading</h4>
+						<h3>Block heading</h3>
 						<ul>
 							<li>List item 1</li>
 							<li><a href="#">List item 2</a></li>
@@ -116,6 +127,26 @@
 						</ul>
 					</div>
 				</div>
+
+				<div class="block-container-3">
+					<div class="block">
+						<h3>Block 3col</h3>
+						<p>Just another test</p>
+					</div>
+				</div>
+				<div class="block-container-3">
+					<div class="block">
+						<h3>Block 3col</h3>
+						<p>Just another test</p>
+					</div>
+				</div>
+				<div class="block-container-3">
+					<div class="block">
+						<h3>Block 3col</h3>
+						<p>Just another test</p>
+					</div>
+				</div>
+
 			</div>
 		</main>
 		<div id="aside">
@@ -123,7 +154,7 @@
 		</div>
 		<div id="footer">
 			<div class="inner">
-				<footer>Footer</footer>
+				<footer>&copy; Flashy company</footer>
 			</div>
 		</div>
 	</div>
