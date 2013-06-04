@@ -1,5 +1,3 @@
-@import "reset";
-
 html {
 	font-size: $base-unit-absolute;
 }
@@ -23,9 +21,10 @@ textarea {
 input,
 select,
 textarea {
+	color: $color-form-input;
 	background: $background-color-form-input;
-	border:none;
 	outline: 0.15rem solid $border-color-form-input;
+	border:none;
 	@include border-radius(0.15rem);
 }
 input {
@@ -89,8 +88,8 @@ button {
 				display: inline-block;
 				margin-left: $base-unit;
 				a {
-					text-decoration:none;
 					color: $color-black;
+					text-decoration:none;
 					span.icon-hide {
 						display:none;
 					}

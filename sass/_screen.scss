@@ -1,9 +1,9 @@
 body {
+	color: $color-font;
 	background:$background-color;
 	padding:$base-unit;
 	font: $font-size-medium $font-family;
 	line-height:1.5em;
-	color: $color-font;
 }
 del {
 	color: $color-font-light;
@@ -20,6 +20,7 @@ a {
 	margin: 0 auto;
 
 	#header, #footer {
+		color: $color-header;
 		background: rgba($background-color-header, 0.9);
 		height: 4 * $base-unit;
 		.inner {
@@ -61,6 +62,7 @@ a {
 			margin-bottom:(4 * $base-unit);
 		}
 		.block {
+			color: $color-content;
 			background:$background-color-content;
 			margin-bottom: $base-unit;
 			padding: 1.5 * $base-unit;

@@ -49,15 +49,21 @@ $color-red-light:    lighten($color-red, 15%);
 
 // Colors -> Function
 
-$background-color: $color-grey;
-$background-color-header: $background-color;
-$background-color-content: $color-grey-light;
+$color-font:                  $color-black;
+$color-font-light:            $color-grey-dark;
+$color-highlight:             $color-blue;
+$color-link:                  $color-blue-dark;
+
+$color-header:                $color-font;
+$color-content:               $color-font;
+$color-form-input:            $color-font;
+
+$border-color-form-input:     $color-grey;
+
+$background-color:            $color-grey;
+$background-color-header:     $background-color;
+$background-color-content:    $color-grey-light;
 $background-color-form-input: $color-white;
-$color-font: $color-black;
-$color-font-light: $color-grey-dark;
-$color-highlight: $color-blue;
-$color-link: $color-blue-dark;
-$border-color-form-input: $color-grey;
 
 // Typography
 
@@ -66,8 +72,8 @@ $font-size-small  : 1rem;
 $font-size-medium : 1.25rem;
 $font-size-large  : 1.5rem;
 
-$font-family: 'Roboto Slab', Garamond, serif;
-$font-family-header : 'Roboto', Tahoma, sans-serif;
+$font-family:        'Roboto Slab', Garamond, serif;
+$font-family-header: 'Roboto', Tahoma, sans-serif;
 
 
 // Dark theme
