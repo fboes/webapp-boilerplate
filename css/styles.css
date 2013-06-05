@@ -89,21 +89,22 @@ button { padding: 0 2%; }
   #container { max-width: 24.66667rem; }
   #container #header .inner, #container #footer .inner { max-width: 22.66667rem; }
   .no-smartphone, .only-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
-@media screen and (min-width: 768px) { html { font-size: 12px; }
-  #container { max-width: 62rem; }
-  #container #header .inner, #container #footer .inner { max-width: 60rem; }
+@media screen and (min-width: 768px) { html { font-size: 13px; }
+  #container { max-width: 57.07692rem; }
+  #container #header .inner, #container #footer .inner { max-width: 55.07692rem; }
   #container #main { zoom: 1; }
   #container #main:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
-  #container #main .block-container, #container #main .block-container-3 { width: 48%; margin: 0 1%; float: left; }
+  #container #main .block-container, #container #main .block-container-2, #container #main .block-container-3, #container #main .block-container-4 { width: 48%; margin: 0 1%; float: left; }
   .only-smartphone, .no-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
-@media screen and (min-width: 1024px) { html { font-size: 15px; }
-  #container { max-width: 66.26667rem; }
-  #container #header .inner, #container #footer .inner { max-width: 64.26667rem; }
-  #container #main .block-container-3 { width: 31.3%; margin: 0 1%; float: left; }
+@media screen and (min-width: 1024px) { html { font-size: 16px; }
+  #container { max-width: 62rem; }
+  #container #header .inner, #container #footer .inner { max-width: 60rem; }
+  #container #main .block-container-3 { width: 31.3%; margin: 0 1%; }
   .only-smartphone, .only-tablet, .no-screen-tablet-landscape, .only-desktop { display: none !important; } }
-@media screen and (min-width: 1280px) { html { font-size: 18px; }
-  #container { max-width: 69.11111rem; }
-  #container #header .inner, #container #footer .inner { max-width: 67.11111rem; }
+@media screen and (min-width: 1280px) { html { font-size: 16px; }
+  #container { max-width: 78rem; }
+  #container #header .inner, #container #footer .inner { max-width: 76rem; }
+  #container #main .block-container-4 { width: 23%; margin: 0 1%; }
   .only-smartphone, .only-tablet, .only-screen-tablet-landscape, .no-desktop { display: none !important; } }
 @media print { html { font-size: 10pt; }
   .no-print { display: none; } }

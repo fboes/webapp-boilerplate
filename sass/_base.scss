@@ -11,9 +11,9 @@ $switch-fixed-footer   : false;
 
 $base-unit-absolute : 12px;
 $base-unit-absolute-smartphone       : round($base-unit-absolute);
-$base-unit-absolute-tablet           : round($base-unit-absolute);
-$base-unit-absolute-tablet-landscape : round($base-unit-absolute * 1.25);
-$base-unit-absolute-desktop          : round($base-unit-absolute * 1.5);
+$base-unit-absolute-tablet           : round($base-unit-absolute * 1.1);
+$base-unit-absolute-tablet-landscape : round($base-unit-absolute * 1.3);
+$base-unit-absolute-desktop          : round($base-unit-absolute * 1.3);
 $base-unit-absolute-print            : 10pt;
 
 $base-unit: 1rem;
