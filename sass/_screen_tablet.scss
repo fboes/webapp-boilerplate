@@ -17,9 +17,11 @@ html {
 		@include clearfix();
 		.block-container,
 		.block-container-2,
+		.block-container-2-3,
 		.block-container-3,
+		.block-container-3-4,
 		.block-container-4 {
-			width:48%;
+			width:50% - 2%;
 			margin:0 1%;
 			float:left;
 		}

@@ -1,10 +1,11 @@
 // Settings
 
-$switch-use-fluid      : false;
-$switch-use-dark       : false;
-$switch-use-navigation : true;
-$switch-fixed-header   : true;
-$switch-fixed-footer   : false;
+$switch-use-fluid          : false;
+$switch-use-dark           : false;
+$switch-use-navigation     : true;
+$switch-fixed-header       : true;
+$switch-fixed-footer       : false;
+$switch-transparent-header : true;
 
 // Base canon (Responsive)
 // See http://developer.android.com/design/style/metrics-grids.html
@@ -47,12 +48,18 @@ $color-red:          #FF4444;
 $color-red-dark:     darken($color-red, 25%);
 $color-red-light:    lighten($color-red, 15%);
 
+@if $switch-use-dark {
+	$color-black:        #000;
+	$color-grey-dark:    mix($color-white, $color-black, 20%);
+}
+
 // Colors -> Function
 
 $color-font:                  $color-black;
 $color-font-light:            $color-grey-dark;
 $color-highlight:             $color-blue;
 $color-link:                  $color-blue-dark;
+$color-button:                $color-font;
 
 $color-header:                $color-font;
 $color-content:               $color-font;
@@ -62,8 +69,38 @@ $border-color-form-input:     $color-grey;
 
 $background-color:            $color-grey;
 $background-color-header:     $background-color;
+$background-color-header-2:   $background-color;
 $background-color-content:    $color-grey-light;
 $background-color-form-input: $color-white;
+$background-color-button:     $color-grey;
+$background-color-button-2:   $color-grey-dark;
+
+@if $switch-use-dark {
+	$color-font:                  $color-white;
+	$color-font-light:            $color-grey-light;
+	$color-highlight:             $color-green;
+	$color-link:                  $color-green-light;
+	$color-button:                $color-black;
+
+	$color-header:                $color-font;
+	$color-content:               $color-font;
+	$color-form-input:            $color-font;
+
+	$border-color-form-input:     $color-grey-dark;
+
+	$background-color:            $color-black;
+	$background-color-header:     $color-green;
+	$background-color-header-2:   $color-green-dark;
+	$background-color-content:    $color-grey-dark;
+	$background-color-form-input: $color-white;
+	$background-color-button:     $color-green-light;
+	$background-color-button-2:   $color-green;
+}
+
+@if $switch-transparent-header {
+	$background-color-header:     rgba($background-color-header, 0.9);
+	$background-color-header-2:   rgba($background-color-header-2, 0.9);
+}
 
 // Typography
 
@@ -75,18 +112,6 @@ $font-size-large  : 1.5rem;
 $font-family:        'Roboto Slab', Garamond, serif;
 $font-family-header: 'Roboto', Tahoma, sans-serif;
 
-
-// Dark theme
-
 @if $switch-use-dark {
 	$font-family: $font-family-header;
-
-	$background-color : rgb(0,0,0);
-	$background-color-header : $background-color;
-	$background-color-content : rgb(10,10,10);
-
-	$color-font : rgb(255,255,255);
-	$color-font-light : rgb(200,200,200);
-	$color-highlight: $color-blue;
-	$color-link: $color-blue-dark;
 }

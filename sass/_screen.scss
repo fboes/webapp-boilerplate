@@ -1,7 +1,7 @@
 body {
 	color: $color-font;
 	background:$background-color;
-	padding:$base-unit;
+	padding:0 $base-unit;
 	font: $font-size-medium $font-family;
 	line-height:1.5em;
 }
@@ -21,7 +21,12 @@ a {
 
 	#header, #footer {
 		color: $color-header;
-		background: rgba($background-color-header, 0.9);
+		@if ($background-color-header == $background-color-header-2) {
+			background: $background-color-header;
+		}
+		@else {
+			@include background(linear-gradient(top, $background-color-header, $background-color-header-2));
+		}
 		height: 4 * $base-unit;
 		.inner {
 			padding: $base-unit $base-unit;
@@ -61,6 +66,7 @@ a {
 		@if $switch-fixed-footer {
 			margin-bottom:(4 * $base-unit);
 		}
+		padding: $base-unit 0;
 		.block {
 			color: $color-content;
 			background:$background-color-content;

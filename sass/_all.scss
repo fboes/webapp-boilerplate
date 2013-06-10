@@ -63,6 +63,24 @@ select {
 }
 button {
 	padding: 0 2%;
+	color: $color-button;
+	border-color:mix($background-color-button, $background-color-button-2);
+	@include border-radius(0.5rem);
+	@if ($background-color-button == $background-color-button-2) {
+		background: $background-color-button;
+	}
+	@else {
+		@include background(linear-gradient(top, $background-color-button, $background-color-button-2));
+	}
+
+	&:hover {
+		@if ($background-color-button == $background-color-button-2) {
+			background: lighten($background-color-button, 10%);
+		}
+		@else {
+			@include background(linear-gradient(top, lighten($background-color-button, 10%), lighten($background-color-button-2, 10%)));
+		}
+	}
 }
 .no-styling {
 	display:inline-block;

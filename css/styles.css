@@ -59,7 +59,8 @@ input[type=hidden] { display: none; }
 
 button, select { width: 100%; }
 
-button { padding: 0 2%; }
+button { padding: 0 2%; color: #5a5a5a; border-color: #c9c9c9; -webkit-border-radius: 0.5rem; -moz-border-radius: 0.5rem; -ms-border-radius: 0.5rem; -o-border-radius: 0.5rem; border-radius: 0.5rem; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dedede), color-stop(100%, #b4b4b4)); background: -webkit-linear-gradient(top, #dedede, #b4b4b4); background: -moz-linear-gradient(top, #dedede, #b4b4b4); background: -o-linear-gradient(top, #dedede, #b4b4b4); background: linear-gradient(top, #dedede, #b4b4b4); }
+button:hover { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #cecece)); background: -webkit-linear-gradient(top, #f8f8f8, #cecece); background: -moz-linear-gradient(top, #f8f8f8, #cecece); background: -o-linear-gradient(top, #f8f8f8, #cecece); background: linear-gradient(top, #f8f8f8, #cecece); }
 
 .no-styling { display: inline-block; width: auto; margin: 0; padding: 0; background: transparent; border: none; outline: none; }
 
@@ -72,7 +73,7 @@ button { padding: 0 2%; }
 #container #header .nav li a { color: #5a5a5a; text-decoration: none; }
 #container #header .nav li a span.icon-hide { display: none; }
 
-@media screen { body { color: #5a5a5a; background: #dedede; padding: 1rem; font: 1.25rem "Roboto Slab", Garamond, serif; line-height: 1.5em; }
+@media screen { body { color: #5a5a5a; background: #dedede; padding: 0 1rem; font: 1.25rem "Roboto Slab", Garamond, serif; line-height: 1.5em; }
   del { color: #b4b4b4; }
   a { color: #116787; }
   a:hover { color: #178ab4; }
@@ -82,7 +83,7 @@ button { padding: 0 2%; }
   #container #header { font: 1.5rem "Roboto", Tahoma, sans-serif; overflow: hidden; position: fixed; left: 0; width: 100%; top: 0; }
   #container #header .header-icon { height: 3rem; margin: -0.5rem 1rem -0.5rem 0; vertical-align: -0.5rem; }
   #container #footer { text-align: right; }
-  #container #main { margin-top: 4rem; }
+  #container #main { margin-top: 4rem; padding: 1rem 0; }
   #container #main .block { color: #5a5a5a; background: #f6f6f6; margin-bottom: 1rem; padding: 1.5rem; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
   #container #main .block h3 { font-size: 1.5rem; margin-bottom: 1rem; }
   html { font-size: 12px; }
@@ -94,16 +95,18 @@ button { padding: 0 2%; }
   #container #header .inner, #container #footer .inner { max-width: 55.07692rem; }
   #container #main { zoom: 1; }
   #container #main:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
-  #container #main .block-container, #container #main .block-container-2, #container #main .block-container-3, #container #main .block-container-4 { width: 48%; margin: 0 1%; float: left; }
+  #container #main .block-container, #container #main .block-container-2, #container #main .block-container-2-3, #container #main .block-container-3, #container #main .block-container-3-4, #container #main .block-container-4 { width: 48%; margin: 0 1%; float: left; }
   .only-smartphone, .no-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 1024px) { html { font-size: 16px; }
   #container { max-width: 62rem; }
   #container #header .inner, #container #footer .inner { max-width: 60rem; }
-  #container #main .block-container-3 { width: 31.3%; margin: 0 1%; }
+  #container #main .block-container-2-3 { width: 64.66%; margin: 0 1%; }
+  #container #main .block-container-3 { width: 31.33%; margin: 0 1%; }
   .only-smartphone, .only-tablet, .no-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 1280px) { html { font-size: 16px; }
   #container { max-width: 78rem; }
   #container #header .inner, #container #footer .inner { max-width: 76rem; }
+  #container #main .block-container-3-4 { width: 73%; margin: 0 1%; }
   #container #main .block-container-4 { width: 23%; margin: 0 1%; }
   .only-smartphone, .only-tablet, .only-screen-tablet-landscape, .no-desktop { display: none !important; } }
 @media print { html { font-size: 10pt; }
