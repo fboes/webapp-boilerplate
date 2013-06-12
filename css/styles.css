@@ -59,8 +59,9 @@ input[type=hidden] { display: none; }
 
 button, select { width: 100%; }
 
-button { padding: 0 2%; color: #5a5a5a; border-color: #c9c9c9; -webkit-border-radius: 0.5rem; -moz-border-radius: 0.5rem; -ms-border-radius: 0.5rem; -o-border-radius: 0.5rem; border-radius: 0.5rem; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dedede), color-stop(100%, #b4b4b4)); background: -webkit-linear-gradient(top, #dedede, #b4b4b4); background: -moz-linear-gradient(top, #dedede, #b4b4b4); background: -o-linear-gradient(top, #dedede, #b4b4b4); background: linear-gradient(top, #dedede, #b4b4b4); }
+button { padding: 0 2%; color: #5a5a5a; border: 0.0625rem solid rgba(0, 0, 0, 0.3); -webkit-border-radius: 0.5rem; -moz-border-radius: 0.5rem; -ms-border-radius: 0.5rem; -o-border-radius: 0.5rem; border-radius: 0.5rem; -webkit-box-shadow: 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dedede), color-stop(100%, #b4b4b4)); background: -webkit-linear-gradient(top, #dedede, #b4b4b4); background: -moz-linear-gradient(top, #dedede, #b4b4b4); background: -o-linear-gradient(top, #dedede, #b4b4b4); background: linear-gradient(top, #dedede, #b4b4b4); }
 button:hover { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #cecece)); background: -webkit-linear-gradient(top, #f8f8f8, #cecece); background: -moz-linear-gradient(top, #f8f8f8, #cecece); background: -o-linear-gradient(top, #f8f8f8, #cecece); background: linear-gradient(top, #f8f8f8, #cecece); }
+button.active { -webkit-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); }
 
 .no-styling { display: inline-block; width: auto; margin: 0; padding: 0; background: transparent; border: none; outline: none; }
 
@@ -69,8 +70,6 @@ button:hover { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop
 #container #header nav { display: inline-block; float: right; }
 #container #header .nav { float: right; }
 #container #header .nav else { display: inline-block; }
-#container #header .nav li { display: inline-block; margin-left: 1rem; }
-#container #header .nav li a { color: #5a5a5a; text-decoration: none; }
 #container #header .nav li a span.icon-hide { display: none; }
 
 @media screen { body { color: #5a5a5a; background: #dedede; padding: 0 1rem; font: 1.25rem "Roboto Slab", Garamond, serif; line-height: 1.5em; }
@@ -82,6 +81,12 @@ button:hover { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop
   #container #header .inner, #container #footer .inner { padding: 1rem 1rem; margin: auto; }
   #container #header { font: 1.5rem "Roboto", Tahoma, sans-serif; overflow: hidden; position: fixed; left: 0; width: 100%; top: 0; }
   #container #header .header-icon { height: 3rem; margin: -0.5rem 1rem -0.5rem 0; vertical-align: -0.5rem; }
+  #container #header .nav { float: right; }
+  #container #header .nav else { display: inline-block; }
+  #container #header .nav li { display: inline-block; margin-left: 0.25rem; }
+  #container #header .nav li a { color: #5a5a5a; text-decoration: none; }
+  #container #header .nav li a i { display: inline-block; text-align: center; width: 3rem; margin: -0.5rem 0; font-size: 1.25em; }
+  #container #header .nav li a span.icon-hide { display: none; }
   #container #footer { text-align: right; }
   #container #main { margin-top: 4rem; padding: 1rem 0; }
   #container #main .block { color: #5a5a5a; background: #f6f6f6; margin-bottom: 1rem; padding: 1.5rem; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
@@ -110,4 +115,5 @@ button:hover { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop
   #container #main .block-container-4 { width: 23%; margin: 0 1%; }
   .only-smartphone, .only-tablet, .only-screen-tablet-landscape, .no-desktop { display: none !important; } }
 @media print { html { font-size: 10pt; }
+  #header .nav { display: none; }
   .no-print { display: none; } }

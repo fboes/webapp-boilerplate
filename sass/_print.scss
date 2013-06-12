@@ -1,12 +1,12 @@
 html {
-  font-size: $base-unit-absolute-print;
-}#header {
-	// insert stuff here
+	font-size: $base-unit-absolute-print;
 }
-#nav {
-	// insert stuff here
+#header {
+	.nav {
+		display:none;
+	}
 }
-#main {
+main {
 	// insert stuff here
 }
 #aside {

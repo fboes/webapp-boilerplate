@@ -64,8 +64,9 @@ select {
 button {
 	padding: 0 2%;
 	color: $color-button;
-	border-color:mix($background-color-button, $background-color-button-2);
-	@include border-radius(0.5rem);
+	border:$base-unit / 16 solid rgba(0,0,0,0.3);
+	@include border-radius($base-unit / 2);
+	@include single-box-shadow(rgba(0,0,0,0.1), 1px, $base-unit / 8, $base-unit / 8);
 	@if ($background-color-button == $background-color-button-2) {
 		background: $background-color-button;
 	}
@@ -80,6 +81,9 @@ button {
 		@else {
 			@include background(linear-gradient(top, lighten($background-color-button, 10%), lighten($background-color-button-2, 10%)));
 		}
+	}
+	&.active {
+		@include single-box-shadow(rgba(0,0,0,0.1), 1px, $base-unit / 8, $base-unit / 8, false, inset);
 	}
 }
 .no-styling {
@@ -115,11 +119,7 @@ button {
 			}
 			float:right;
 			li {
-				display: inline-block;
-				margin-left: $base-unit;
 				a {
-					color: $color-black;
-					text-decoration:none;
 					span.icon-hide {
 						display:none;
 					}
