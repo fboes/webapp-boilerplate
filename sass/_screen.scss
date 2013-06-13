@@ -14,6 +14,11 @@ a {
 		color: lighten($color-link, 10%);
 	}
 }
+ul {
+	li {
+		margin-left: 1.5 * $base-unit;
+	}
+}
 
 #container {
 	position:relative;
@@ -80,6 +85,7 @@ a {
 	}
 	#footer {
 		text-align:right;
+		font-family: $font-family-header;
 		@if $switch-fixed-footer {
 			position:fixed;
 			left: 0;
@@ -95,16 +101,24 @@ a {
 			margin-bottom:(4 * $base-unit);
 		}
 		padding: $base-unit 0;
-		.block {
+		section {
 			color: $color-content;
 			background:$background-color-content;
 			margin-bottom: $base-unit;
 			padding: 1.5 * $base-unit;
+			@include box-sizing(border-box);
 			@include single-box-shadow(rgba(0,0,0,0.1), 1px, $base-unit / 2, $base-unit / 2);
 
 			h3 {
 				font-size:$font-size-large;
 				margin-bottom:$base-unit;
+			}
+			footer {
+				padding-top: $base-unit / 2;
+				margin-top: $base-unit;
+				color: $color-grey-dark;
+				border-top:$base-unit/8 dotted;
+				font: $font-size-small $font-family-header;
 			}
 
 		}
