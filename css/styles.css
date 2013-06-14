@@ -100,29 +100,29 @@ button.active { -webkit-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.
   #container #header .inner, #container #footer .inner { max-width: 22.66667rem; }
   #container #main { zoom: 1; }
   #container #main:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
-  #container #main .block-container, #container #main .block-container-2, #container #main .block-container-2-3, #container #main .block-container-3, #container #main .block-container-3-4, #container #main .block-container-4 { zoom: 1; }
-  #container #main .block-container:after, #container #main .block-container-2:after, #container #main .block-container-2-3:after, #container #main .block-container-3:after, #container #main .block-container-3-4:after, #container #main .block-container-4:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
-  #container #main .block-container section, #container #main .block-container-2 section, #container #main .block-container-2-3 section, #container #main .block-container-3 section, #container #main .block-container-3-4 section, #container #main .block-container-4 section { float: left; width: 100%; }
-  #container #main .block-container-2 { margin: 0 -1%; }
-  #container #main .block-container-2 section { width: 48%; margin-left: 1%; margin-right: 1%; }
+  #container #main .block-container, #container #main .block-container-2, #container #main .block-container-3, #container #main .block-container-4 { zoom: 1; }
+  #container #main .block-container:after, #container #main .block-container-2:after, #container #main .block-container-3:after, #container #main .block-container-4:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
+  #container #main .block-container section, #container #main .block-container-2 section, #container #main .block-container-3 section, #container #main .block-container-4 section { float: left; width: 100%; }
+  #container #main .block-container-4 { margin: 0 -1%; }
+  #container #main .block-container-4 section { width: 48%; margin-left: 1%; margin-right: 1%; }
   .no-smartphone, .only-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 768px) { html { font-size: 13px; }
   #container { max-width: 57.07692rem; }
   #container #header .inner, #container #footer .inner { max-width: 55.07692rem; }
-  #container #main .block-container, #container #main .block-container-3, #container #main .block-container-4 { margin: 0 -1%; }
-  #container #main .block-container section, #container #main .block-container-3 section, #container #main .block-container-4 section { width: 48%; margin-left: 1%; margin-right: 1%; }
+  #container #main .block-container, #container #main .block-container-2 { margin: 0 -1%; }
+  #container #main .block-container section, #container #main .block-container-2 section { width: 48%; margin-left: 1%; margin-right: 1%; }
+  #container #main .block-container-3 { margin: 0 -1%; }
+  #container #main .block-container-3 section { width: 31.33333%; margin-left: 1%; margin-right: 1%; }
   .only-smartphone, .no-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 1024px) { html { font-size: 16px; }
   #container { max-width: 62rem; }
   #container #header .inner, #container #footer .inner { max-width: 60rem; }
-  #container #main .block-container-3 { margin: 0 -1%; }
-  #container #main .block-container-3 section { width: 31.33333%; margin-left: 1%; margin-right: 1%; }
+  #container #main .block-container-4 { margin: 0 -1%; }
+  #container #main .block-container-4 section { width: 23%; margin-left: 1%; margin-right: 1%; }
   .only-smartphone, .only-tablet, .no-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 1280px) { html { font-size: 16px; }
   #container { max-width: 78rem; }
   #container #header .inner, #container #footer .inner { max-width: 76rem; }
-  #container #main .block-container-4 { margin: 0 -1%; }
-  #container #main .block-container-4 section { width: 23%; margin-left: 1%; margin-right: 1%; }
   .only-smartphone, .only-tablet, .only-screen-tablet-landscape, .no-desktop { display: none !important; } }
 @media print { html { font-size: 10pt; }
   #header .nav { display: none; }

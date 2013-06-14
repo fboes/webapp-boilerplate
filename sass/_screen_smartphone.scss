@@ -17,9 +17,7 @@ html {
 		@include clearfix();
 		.block-container,
 		.block-container-2,
-		.block-container-2-3,
 		.block-container-3,
-		.block-container-3-4,
 		.block-container-4 {
 			@include clearfix();
 			section {
@@ -27,7 +25,7 @@ html {
 				width: 100%;
 			}
 		}
-		.block-container-2 {
+		.block-container-4 {
 			margin: 0 -1%;
 			section {
 				width: (100%/2) - 2%;
