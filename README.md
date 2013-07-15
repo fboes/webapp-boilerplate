@@ -37,6 +37,7 @@ Things you may want to do
 * Add some touch gesture support (e.g. via [jQuery.event.swipe](http://stephband.info/jquery.event.swipe/))
 * You may also want to take a look at all the new [Javascript APIs](http://alistapart.com/article/environmental-design-with-the-device-api)
 * …and [HTML5 local storage](http://diveintohtml5.info/storage.html)
+* …and [Websockets](http://www.html5rocks.com/en/tutorials/websockets/basics/)
 
 Webbapp-Boilerplate license
 ----------------------------

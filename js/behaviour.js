@@ -1,12 +1,18 @@
 (function ($) {
 	$.fn.examplePlugin = function (options) {
 		var behaviour = {
-			options: $.extend(
+			options : $.extend(
 				{
 				},
 				options
 			),
+
+			elements : {
+				parent : null
+			},
+
 			init : function (el) {
+				this.elements.parent = el;
 				// Your stuff here
 				console.log("Ready and waiting…");
 			}
