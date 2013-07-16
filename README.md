@@ -39,9 +39,9 @@ Things you may want to do
 * …and [HTML5 local storage](http://diveintohtml5.info/storage.html)
 * …and [Websockets](http://www.html5rocks.com/en/tutorials/websockets/basics/)
 
-Webbapp-Boilerplate license
-----------------------------
+Webbapp-Boilerplate legal stuff
+-------------------------------
 
-Author:    Frank Boës <http://3960.org>
+Author: [Frank Boës](http://3960.org)
 
-Copyright: [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
+Copyright & license: See LICENSE.txt
