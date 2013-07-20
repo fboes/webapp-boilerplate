@@ -124,6 +124,7 @@ table {
 			background:$background-color-content;
 			margin-bottom: $base-unit;
 			padding: 1.5 * $base-unit;
+			overflow:auto;
 			@include box-sizing(border-box);
 			@include single-box-shadow(rgba(0,0,0,0.1), 1px, $base-unit / 2, $base-unit / 2);
 

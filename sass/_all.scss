@@ -49,7 +49,7 @@ input {
 	&[type=radio],
 	&[type=checkbox] {
 		display:inline-block;
-		width:auto;
+		width:auto !important;
 		padding:0;
 		margin: 0 0.5 * $base-unit 0 0;
 	}
@@ -58,6 +58,10 @@ input {
 	&[type=range] {
 		background:none;
 		outline:none;
+		border:none;
+	}
+	&[type=range] {
+		vertical-align: middle;
 	}
 	&[type=hidden] {
 		display:none;
@@ -90,6 +94,14 @@ button {
 	}
 	&.active {
 		@include single-box-shadow(rgba(0,0,0,0.1), 1px, $base-unit / 8, $base-unit / 8, false, inset);
+	}
+}
+.form-field-double {
+	input,
+	select,
+	textarea {
+		width: 48%;
+		display:inline-block;
 	}
 }
 .no-styling {

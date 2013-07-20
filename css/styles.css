@@ -57,8 +57,9 @@ label, button, input, select, textarea { font: inherit; color: inherit; display:
 
 input, select, textarea { color: #5a5a5a; background: white; outline: 0.15rem solid #dedede; border: none; -webkit-border-radius: 0.15rem; -moz-border-radius: 0.15rem; -ms-border-radius: 0.15rem; -o-border-radius: 0.15rem; border-radius: 0.15rem; }
 
-input[type=radio], input[type=checkbox] { display: inline-block; width: auto; padding: 0; margin: 0 0.5rem 0 0; }
-input[type=radio], input[type=checkbox], input[type=range] { background: none; outline: none; }
+input[type=radio], input[type=checkbox] { display: inline-block; width: auto !important; padding: 0; margin: 0 0.5rem 0 0; }
+input[type=radio], input[type=checkbox], input[type=range] { background: none; outline: none; border: none; }
+input[type=range] { vertical-align: middle; }
 input[type=hidden] { display: none; }
 
 button, select { width: 100%; }
@@ -66,6 +67,8 @@ button, select { width: 100%; }
 button { padding: 0 2%; color: #5a5a5a; border: 0.0625rem solid rgba(0, 0, 0, 0.3); -webkit-border-radius: 0.5rem; -moz-border-radius: 0.5rem; -ms-border-radius: 0.5rem; -o-border-radius: 0.5rem; border-radius: 0.5rem; -webkit-box-shadow: 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dedede), color-stop(100%, #b4b4b4)); background: -webkit-linear-gradient(top, #dedede, #b4b4b4); background: -moz-linear-gradient(top, #dedede, #b4b4b4); background: -o-linear-gradient(top, #dedede, #b4b4b4); background: linear-gradient(top, #dedede, #b4b4b4); }
 button:hover { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #cecece)); background: -webkit-linear-gradient(top, #f8f8f8, #cecece); background: -moz-linear-gradient(top, #f8f8f8, #cecece); background: -o-linear-gradient(top, #f8f8f8, #cecece); background: linear-gradient(top, #f8f8f8, #cecece); }
 button.active { -webkit-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); }
+
+.form-field-double input, .form-field-double select, .form-field-double textarea { width: 48%; display: inline-block; }
 
 .no-styling { display: inline-block; width: auto; margin: 0; padding: 0; background: transparent; border: none; outline: none; }
 
@@ -99,7 +102,7 @@ button.active { -webkit-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.
   #container #header .nav li a span.icon-hide { display: none; }
   #container #footer { text-align: right; font-family: "Roboto", Tahoma, sans-serif; }
   #container #main { margin-top: 4rem; padding: 1rem 0; }
-  #container #main section { color: #5a5a5a; background: #f6f6f6; margin-bottom: 1rem; padding: 1.5rem; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
+  #container #main section { color: #5a5a5a; background: #f6f6f6; margin-bottom: 1rem; padding: 1.5rem; overflow: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
   #container #main section h3 { font-size: 1.5rem; margin-bottom: 1rem; }
   #container #main section footer { padding-top: 0.5rem; margin-top: 1rem; color: #b4b4b4; border-top: 0.125rem dotted; font: 1rem "Roboto", Tahoma, sans-serif; }
   html { font-size: 12px; }
@@ -116,8 +119,8 @@ button.active { -webkit-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.
 @media screen and (min-width: 768px) { html { font-size: 13px; }
   #container { max-width: 57.07692rem; }
   #container #header .inner, #container #footer .inner { max-width: 55.07692rem; }
-  #container #main .block-container, #container #main .block-container-2 { margin: 0 -1%; }
-  #container #main .block-container section, #container #main .block-container-2 section { width: 48%; margin-left: 1%; margin-right: 1%; }
+  #container #main .block-container-2 { margin: 0 -1%; }
+  #container #main .block-container-2 section { width: 48%; margin-left: 1%; margin-right: 1%; }
   #container #main .block-container-3 { margin: 0 -1%; }
   #container #main .block-container-3 section { width: 31.33333%; margin-left: 1%; margin-right: 1%; }
   .only-smartphone, .no-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
