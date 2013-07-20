@@ -19,6 +19,22 @@ ul {
 		margin-left: 1.5 * $base-unit;
 	}
 }
+table {
+	thead {
+		border-bottom:$base-unit/8 dotted;
+	}
+	tfoot {
+		border-top:$base-unit/8 dotted;
+		color: $color-grey-dark;
+	}
+	td, th {
+		padding-right:0.5em;
+		&.number {
+			text-align:right;
+			font-family: $font-family-fixed;
+		}
+	}
+}
 
 #container {
 	position:relative;
