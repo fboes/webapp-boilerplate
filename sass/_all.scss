@@ -6,6 +6,7 @@ html {
 .form-field {
 	display:block;
 	margin-bottom: $base-unit;
+	clear: left;
 	ul.checkbox {
 		list-style:none;
 		display:block;
@@ -18,6 +19,11 @@ html {
 			margin:0;
 		}
 	}
+}
+.form-field-half {
+	width:49%;
+	float:left;
+	clear:none;
 }
 label,
 button,
