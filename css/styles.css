@@ -79,6 +79,10 @@ button.active { -webkit-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.
   a { color: #116787; }
   a:hover { color: #178ab4; }
   ul li { margin-left: 1.5rem; }
+  table thead { border-bottom: 0.125rem dotted; }
+  table tfoot { border-top: 0.125rem dotted; color: #b4b4b4; }
+  table td, table th { padding-right: 0.5em; }
+  table td.number, table th.number { text-align: right; font-family: "Courier New", monospace; }
   #container { position: relative; margin: 0 auto; }
   #container #header, #container #footer { color: #5a5a5a; background: rgba(222, 222, 222, 0.9); height: 4rem; }
   #container #header .inner, #container #footer .inner { padding: 1rem 1rem; margin: auto; }
