@@ -44,6 +44,11 @@ textarea {
 	outline: 0.15rem solid $border-color-form-input;
 	border:none;
 	@include border-radius(0.15rem);
+	&[disabled] {
+		color: $color-form-input-disabled;
+		background-color: $background-color-form-input-disabled;
+		outline-color: $border-color-form-input-disabled;
+	}
 }
 input {
 	&[type=radio],
