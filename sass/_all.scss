@@ -52,7 +52,9 @@ textarea {
 }
 input {
 	&[type=radio],
-	&[type=checkbox] {
+	&[type=checkbox],
+	&[type=file],
+	&[type=submit] {
 		display:inline-block;
 		width:auto !important;
 		padding:0;
@@ -60,6 +62,8 @@ input {
 	}
 	&[type=radio],
 	&[type=checkbox],
+	&[type=file],
+	&[type=submit],
 	&[type=range] {
 		background:none;
 		outline:none;
