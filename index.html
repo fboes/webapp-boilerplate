@@ -3,7 +3,7 @@
 <!--html prefix="og: http://ogp.me/ns#" manifest="manifests/manifest.appcache" lang="en"-->
 <head>
 	<meta charset="UTF-8" />
-	<title>Lander Configurator</title>
+	<title>Flashy title</title>
 	<link href="//fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700" rel="stylesheet" />
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css" />
@@ -13,12 +13,12 @@
 	<link rel="icon" sizes="48x48" href="favicon.ico" />
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	<link rel="shortcut icon" href="favicon.ico" />
-	<meta name="description" content="Configure your lunar lander" />
-	<meta property="og:title" content="Lander Configurator" />
-	<meta property="og:description" content="Configure your lunar lander" />
+	<meta name="description" content="Flashy description" />
+	<meta property="og:title" content="Flashy title" />
+	<meta property="og:description" content="Flashy description" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://3960.org/lander/" />
-	<meta property="og:image" content="http://3960.org/lander/apple-touch-icon.png" />
+	<meta property="og:url" content="http://flashy-url.org/" />
+	<meta property="og:image" content="http://flashy-url.org/apple-touch-icon.png" />
 </head>
 <body>
 	<div id="container">
@@ -26,105 +26,167 @@
 			<div class="inner">
 				<header role="banner">
 					<a href="#"><img src="apple-touch-icon.png" alt="Home" class="header-icon" /></a>
-					<h1>Lander Configurator</h1>
+					<h1>Flashy title</h1>
 				</header>
-				<!--nav role="navigation">
+				<nav role="navigation">
 					<ul class="nav">
 						<li><a href="#"><i class="icon-ellipsis-vertical"></i> <span class="icon-hide">Menu</span></a></li>
 						<li><a href="#"><i class="icon-search"></i> <span class="icon-hide">Search</span></a></li>
 					</ul>
-				</nav-->
+				</nav>
 			</div>
 		</div>
 		<div id="main">
 			<main role="main">
 				<div class="block-container">
 					<section>
-						<h3>Your lander</h3>
-						<form action="." method="get" id="mainForm">
+						<h3>Block heading</h3>
+						<form action="." method="get">
 							<span class="form-field">
-								<label for="engineWeight">Engine weight (t)</label><input id="engineWeight" name="engineWeight" type="number" min="0" max="200" step="0.1" value="1" required="required" />
-							</span>							<span class="form-field">
-								<label for="rcsWeight">RCS weight (t)</label><input id="rcsWeight" name="rcsWeight" type="number" min="0" max="200" step="0.1" value="0.1" required="required" />
-							</span>							<span class="form-field">
-								<label for="fuelWeight">Fuel weight (t)</label><input id="fuelWeight" name="fuelWeight" type="number" min="0" max="200" step="0.1" value="2" required="required" />
-							</span>							<span class="form-field">
-								<label for="cargoCapacity">Cargo capacity (t)</label><input id="cargoCapacity" name="cargoCapacity" type="number" min="0" max="200" step="0.1" value="3" required="required" />
-							</span>							<span class="form-field">
-								<label for="equipmentWeight">Equipment weight (t)</label><input id="equipmentWeight" name="equipmentWeight" type="number" min="0" max="200" step="0.1" value="0.5" required="required" />
-							</span>							<span class="form-field">
-								<label for="structuralWeight">Structural weight (t)</label><input id="structuralWeight" name="structuralWeight" type="number" min="0" max="200" step="0.1" value="1" required="required" />
-							</span>						</form>
+								<label for="text">text</label><input id="text" name="text" type="text" required="required" />
+							</span>
+							<span class="form-field">
+								<label for="number">number</label><input id="number" name="number" type="number" min="0" max="10" step="0.1" />
+							</span>
+							<span class="form-field">
+								<label for="date">date</label><input id="date" name="date"  type="date" />
+							</span>
+							<span class="form-field">
+								<label for="url">url</label><input id="url" name="url"  type="url" />
+							</span>
+							<span class="form-field">
+								<label for="select">select</label><select id="select" name="select">
+									<option>Item 1</option>
+									<option>Item 1</option>
+									<option>Item 1</option>
+								</select>
+							</span>
+							<button type="submit">Submit</button>
+						</form>
 					</section>
 					<section>
-						<h3>Your lander - summary</h3>
-						<table>
-							<thead>
-								<tr>
-									<th>Part</th><th>Weight</th><th>Additional weight</th><th>Output</th>
-								</tr>
-							</thead>
-							<tfoot>
-								<tr>
-									<th>Empty weight</th>
-									<td class="number"><span id="output-totalEmpty">0</span>t</td>
-								</tr>
-								<tr>
-									<th>Weight w/o cargo</th>
-									<td class="number"><span id="output-totalFuel">0</span>t</td>
-								</tr>
-								<tr>
-									<th>Max weight</th>
-									<td class="number"><span id="output-totalFuelCargo">0</span>t</td>
-								</tr>
-							</tfoot>
-							<tbody>
-								<tr>
-									<th>Engine</th>
-									<td class="number"><span id="output-engineWeight">0</span>t</td>
-									<td></td>
-									<td class="number"><span id="output-engineThrust">0</span>kN</td>
-								</tr>
-								<tr>
-									<th>RCS</th>
-									<td class="number"><span id="output-rcsWeight">0</span>t</td>
-									<td></td>
-									<td class="number"><span id="output-rcsThrust">0</span>kN</td>
-								</tr>
-								<tr>
-									<th>Fuel</th>
-									<td class="number"><span id="output-fuelWeight">0</span>t</td>
-									<td class="number"><span id="output-fuelWeightAdditional">0</span>t</td>
-									<td class="number"><span id="output-fuelCapacity">0</span>l</td>
-								</tr>
-								<tr>
-									<th>Cargo</th>
-									<td class="number"><span id="output-cargoCapacity">0</span>t</td>
-									<td class="number"><span id="output-cargoCapacityAdditional">0</span>t</td>
-								</tr>
-								<tr>
-									<th>Equipment</th>
-									<td class="number"><span id="output-equipmentWeight">0</span>t</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<th>Structural</th>
-									<td class="number"><span id="output-structuralWeight">0</span>t</td>
-									<td></td>
-									<td><span id="output-structuralTolerance">Sturdy</span></td>
-								</tr>
-							</tbody>
-						</table>
+						<h3>Block heading</h3>
+						<form action="." method="get">
+							<span class="form-field">
+								<label for="range">range</label><input id="range" name="range" type="range" min="0" max="10" step="0.1" /><output name="range-output" for="range"></output>
+							</span>
+							<span class="form-field">
+								<label for="range2">range</label><input id="range2" name="range2" type="range" min="0" max="10" step="0.1" /><input type0"number" name="range2-output" for="range2" min="0" max="10" step="0.1" />
+							</span>
+							<span class="form-field">
+								<label for="email">email</label><input id="email" name="email" type="email" />
+							</span>
+							<span class="form-field">
+								<label for="tel">tel</label><input id="tel" name="tel" type="tel" />
+							</span>
+							<span class="form-field">
+								<label for="textarea">textarea</label><textarea id="textarea" name="textarea"></textarea>
+							</span>
+							<span class="form-field">
+								<label for="select">select</label><select id="select" name="select">
+									<option>Item 1</option>
+									<option>Item 1</option>
+									<option>Item 1</option>
+								</select>
+							</span>
+							<span class="form-field">
+								<label>Checkboxes</label>
+								<ul id="f" class="checkbox checkbox-checkbox">
+									<li><label><input value="1" name="f[]" type="checkbox" class="checkbox checkbox-checkbox" /> <span>1</span></label></li>
+									<li><label><input value="2" name="f[]" type="checkbox" class="checkbox checkbox-checkbox" /> <span>2</span></label></li>
+									<li><label><input value="3" name="f[]" type="checkbox" class="checkbox checkbox-checkbox" /> <span>3</span></label></li>
+								</ul>
+							</span>
+							<span class="form-field">
+								<label>Radiobuttons</label>
+								<ul id="g" class="checkbox checkbox-radio">
+									<li><label><input value="1" name="g" type="radio" class="checkbox checkbox-radio" /> <span>1</span></label></li>
+									<li><label><input value="2" name="g" type="radio" class="checkbox checkbox-radio" /> <span>2</span></label></li>
+									<li><label><input value="3" name="g" type="radio" class="checkbox checkbox-radio" /> <span>3</span></label></li>
+								</ul>
+							</span>
+							<button type="submit" class="active">Submit</button>
+						</form>
 					</section>
 				</div>
+
+				<div class="block-container-4">
+					<section>
+						<h3>Block 4col</h3>
+						<ul>
+							<li>List item 1</li>
+							<li><a href="#">List item 2</a></li>
+							<li><del>List item 3</del></li>
+							<li>
+								<input class="no-styling" id="text" name="text" type="text" value="List item 4" />
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Block 4col</h3>
+						<ul>
+							<li>List item 1</li>
+							<li><a href="#">List item 2</a></li>
+							<li><del>List item 3</del></li>
+							<li>
+								<input class="no-styling" id="text" name="text" type="text" value="List item 4" />
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Block 4col</h3>
+						<ul>
+							<li>List item 1</li>
+							<li><a href="#">List item 2</a></li>
+							<li><del>List item 3</del></li>
+							<li><del>List item 4</del></li>
+							<li><del>List item 5</del></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Block 4col</h3>
+						<ul>
+							<li>List item 1</li>
+							<li><a href="#">List item 2</a></li>
+							<li><del>List item 3</del></li>
+							<li><del>List item 4</del></li>
+							<li><del>List item 5</del></li>
+						</ul>
+					</section>
+				</div>
+
+				<div class="block-container-3">
+					<section>
+						<h3>Block 3col</h3>
+						<p>Just another test</p>
+						<footer>
+							Last change: Yesterday
+						</footer>
+					</section>
+					<section>
+						<h3>Block 3col</h3>
+						<p>Just another test</p>
+						<footer>
+							Last change: Today
+						</footer>
+					</section>
+					<section>
+						<h3>Block 3col</h3>
+						<p>Just another test</p>
+						<footer>
+							Last change: Last Tuesday
+						</footer>
+					</section>
+				</div>
+
+			</div>
 		</main>
 		<div id="aside">
 			<aside role="complementary"><!-- --></aside>
 		</div>
 		<div id="footer">
 			<div class="inner">
-				<footer>Build with <a href="https://github.com/fboes/webapp-boilerplate">Webapp-Boilerplate</a> &middot; &copy; Frank Boës</footer>
+				<footer>Build with <a href="https://github.com/fboes/webapp-boilerplate">Webapp-Boilerplate</a> &middot; &copy; Flashy company</footer>
 			</div>
 		</div>
 	</div>

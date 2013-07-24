@@ -19,10 +19,10 @@ So all the cool stuff is here. :)
 Setup
 -----
 
-1. Replace "`Lander Configurator`" in all files with the name of your app
-2. Replace "`Configure your lunar lander`" in all files with the description of your app
-3. Replace "`Frank Boës`" with your name
-4. Replace "`http://3960.org/lander/`" with your URL
+1. Replace "`Flashy title`" in all files with the name of your app
+2. Replace "`Flashy description`" in all files with the description of your app
+3. Replace "`Flashy company`" with your name
+4. Replace "`http://flashy-url.org/`" with your URL
 5. Replace `favicon.ico` (48×48px),  `favicon.png` (128×128px) and `apple-touch-icon.png` (144×144px) with your icon
 6. Optional: Replace "`en`" with your desired locale
 7. Start coding!

@@ -1,14 +1,14 @@
 {
-	"name": "Lander Configurator",
-	"description": "Configure your lunar lander",
+	"name": "Flashy title",
+	"description": "Flashy description",
 	"launch_path": "/",
 	"icons": {
 		"48" : "/favicon.ico",
 		"128": "/favicon.png"
 	},
 	"developer": {
-		"name": "Frank Boës",
-		"url": "http://3960.org/lander/"
+		"name": "Flashy company",
+		"url": "http://flashy-url.org/"
 	},
 	"default_locale": "en"
 }
