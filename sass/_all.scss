@@ -6,6 +6,7 @@ html {
 .form-field {
 	display:block;
 	margin-bottom: $base-unit;
+	clear: left;
 	ul.checkbox {
 		list-style:none;
 		display:block;
@@ -18,6 +19,11 @@ html {
 			margin:0;
 		}
 	}
+}
+.form-field-half {
+	width:49%;
+	float:left;
+	clear:none;
 }
 label,
 button,
@@ -38,12 +44,17 @@ textarea {
 	outline: 0.15rem solid $border-color-form-input;
 	border:none;
 	@include border-radius(0.15rem);
+	&[disabled] {
+		color: $color-form-input-disabled;
+		background-color: $background-color-form-input-disabled;
+		outline-color: $border-color-form-input-disabled;
+	}
 }
 input {
 	&[type=radio],
 	&[type=checkbox] {
 		display:inline-block;
-		width:auto;
+		width:auto !important;
 		padding:0;
 		margin: 0 0.5 * $base-unit 0 0;
 	}
@@ -52,6 +63,10 @@ input {
 	&[type=range] {
 		background:none;
 		outline:none;
+		border:none;
+	}
+	&[type=range] {
+		vertical-align: middle;
 	}
 	&[type=hidden] {
 		display:none;
@@ -84,6 +99,14 @@ button {
 	}
 	&.active {
 		@include single-box-shadow(rgba(0,0,0,0.1), 1px, $base-unit / 8, $base-unit / 8, false, inset);
+	}
+}
+.form-field-double {
+	input,
+	select,
+	textarea {
+		width: 48%;
+		display:inline-block;
 	}
 }
 .no-styling {
