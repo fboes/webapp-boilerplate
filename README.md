@@ -26,7 +26,21 @@ Setup
 5. Replace `favicon.ico` (48×48px),  `favicon.png` (128×128px) and `apple-touch-icon.png` (144×144px) with your icon
 6. Optional: Replace "`en`" with your desired locale
 7. Start coding!
-8 Activate caching in index.html by commenting line 2 & uncommenting line 3.
+8. Activate caching in index.html by commenting line 2 & uncommenting line 3.
+
+Extended setup
+--------------
+
+If you want to hack a small application with this template:
+
+1. Move `index.html` to `views` folder, add `.htaccess` from `app` folder
+2. Create login in `app` folder
+2. Place controller in base directory, e.g. `index.php`. Let it require the logic from `app` folder and HTML template from `views` folder
+
+If you want to use this template with any kind of MVC framework:
+
+1. Move the whole project to your `public` folder
+2. Move the index.html to your `views` folder
 
 Things you may want to do
 -------------------------
