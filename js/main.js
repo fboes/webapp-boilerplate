@@ -25,14 +25,15 @@
 })(jQuery);
 
 /*
+// Add installation dialog for Firefox OS
+
 if (typeof navigator.mozApps != 'undefined'){
-	var request = navigator.mozApps.checkInstalled("http://path.to/my/manifests/manifest.webapp");
+	var request = navigator.mozApps.checkInstalled("http://flashy-url.org/manifests/manifest.webapp");
 	request.onsuccess = function() {
 		if (request.result) {
 			// we're installed
-		}
-		else {
-			var request = navigator.mozApps.install("http://path.to/my/manifests/manifest.webapp");
+		} else {
+			var request = navigator.mozApps.install("http://flashy-url.org/manifests/manifest.webapp");
 			request.onsuccess = function() {
 				// great - display a message, or redirect to a launch page
 			};
@@ -45,6 +46,24 @@ if (typeof navigator.mozApps != 'undefined'){
 		alert('Error checking installation status: ' + this.error.message);
 	};
 }
+*/
+
+/*
+// Reload the appcache
+
+if (typeof window.applicationCache != 'undefined'){
+	function updateCache() {
+			window.applicationCache.addEventListener('updateready', function() {
+				if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+					window.applicationCache.swapCache();
+				}
+			});
+			window.applicationCache.update();
+		}
+	}
+}
+
+
 */
 
 $(document).ready(function() {
