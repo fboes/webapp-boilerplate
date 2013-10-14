@@ -15,8 +15,14 @@
 	@import 'screen';
 	@import 'screen_smartphone';
 }
-@media screen and (max-width: $width-screen-tablet - 1px) {
+@media screen and (max-width: $width-screen-smartphone-landscape - 1px) {
 	@import 'screen_only_smartphone';
+}
+@media screen and (min-width: $width-screen-smartphone-landscape) {
+	@import 'screen_smartphone_landscape';
+}
+@media screen and (min-width: $width-screen-smartphone-landscape) and (max-width: $width-screen-tablet - 1px) {
+	@import 'screen_only_smartphone_landscape';
 }
 @media screen and (min-width: $width-screen-tablet) {
 	@import 'screen_tablet';
@@ -32,6 +38,7 @@
 }
 @media screen and (min-width: $width-screen-desktop) {
 	@import 'screen_desktop';
+	@import 'screen_only_desktop';
 }
 @media print {
 	@import 'print';

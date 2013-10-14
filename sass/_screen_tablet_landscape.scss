@@ -14,20 +14,15 @@ html {
 		}
 	}
 	#main {
+		.block-container-3 {
+			section {
+				width: (100%/3) - 2%;
+			}
+		}
 		.block-container-4 {
-			margin: 0 -1%;
 			section {
 				width: (100%/4) - 2%;
-				margin-left: 1%;
-				margin-right: 1%;
 			}
 		}
 	}
-}
-
-.only-smartphone,
-.only-tablet,
-.no-screen-tablet-landscape,
-.only-desktop {
- 	display:none !important;
 }
