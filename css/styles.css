@@ -71,7 +71,7 @@ button.active { -webkit-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.
 
 .form-field-double input, .form-field-double select, .form-field-double textarea { width: 48%; display: inline-block; }
 
-.no-styling { display: inline-block; width: auto; margin: 0; padding: 0; background: transparent; border: none; outline: none; }
+.no-styling { display: inline-block; width: auto; max-width:99%; margin: 0; padding: 0; background: transparent; border: none; outline: none; }
 
 #container #header header { display: inline-block; }
 #container #header h1 { font-size: 1em; display: inline-block; font-weight: normal; }
