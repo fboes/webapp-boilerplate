@@ -22,11 +22,12 @@ Setup
 1. Replace "`Flashy title`" in all files with the name of your app
 2. Replace "`Flashy description`" in all files with the description of your app
 3. Replace "`Flashy company`" with your name
-4. Replace "`http://flashy-url.org/`" with your URL
-5. Replace `favicon.ico` (48×48px),  `favicon.png` (128×128px) and `apple-touch-icon.png` (144×144px) with your icon
-6. Optional: Replace "`en`" with your desired locale
-7. Start coding!
-8. Activate caching in index.html by commenting line 2 & uncommenting line 3.
+4. Replace "`http://flashy-domain`" with the domain-part your URL
+5. Replace "`/flashy-path/`" with the path-part your URL
+6. Replace `favicon.ico` (48×48px),  `favicon.png` (128×128px) and `apple-touch-icon.png` (144×144px) with your icon
+7. Optional: Replace "`en`" with your desired locale
+8. Start coding!
+9. Activate caching in index.html by commenting line 2 & uncommenting line 3.
 
 Extended setup
 --------------

@@ -28,12 +28,12 @@
 // Add installation dialog for Firefox OS
 
 if (typeof navigator.mozApps != 'undefined'){
-	var request = navigator.mozApps.checkInstalled("http://flashy-url.org/manifests/manifest.webapp");
+	var request = navigator.mozApps.checkInstalled("http://flashy-domain/flashy-path/manifests/manifest.webapp");
 	request.onsuccess = function() {
 		if (request.result) {
 			// we're installed
 		} else {
-			var request = navigator.mozApps.install("http://flashy-url.org/manifests/manifest.webapp");
+			var request = navigator.mozApps.install("http://flashy-domain/flashy-path/manifests/manifest.webapp");
 			request.onsuccess = function() {
 				// great - display a message, or redirect to a launch page
 			};
