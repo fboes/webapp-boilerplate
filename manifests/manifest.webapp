@@ -1,9 +1,12 @@
 {
 	"name": "Flashy title",
+	"version": "1.0",
 	"description": "Flashy description",
 	"launch_path": "/my-flashy-path/",
+	"appcache_path": "/my-flashy-path/manifests/manifest.appcache",
 	"icons": {
 		"48" : "/my-flashy-path/favicon.ico",
+		"60" : "/my-flashy-path/firefox-os-icon.png",
 		"128": "/my-flashy-path/favicon.png"
 	},
 	"developer": {

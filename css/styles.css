@@ -67,11 +67,11 @@ button, select { width: 100%; }
 
 button { padding: 0 2%; color: #5a5a5a; border: 0.0625rem solid rgba(0, 0, 0, 0.3); -webkit-border-radius: 0.5rem; -moz-border-radius: 0.5rem; -ms-border-radius: 0.5rem; -o-border-radius: 0.5rem; border-radius: 0.5rem; -webkit-box-shadow: 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dedede), color-stop(100%, #b4b4b4)); background: -webkit-linear-gradient(top, #dedede, #b4b4b4); background: -moz-linear-gradient(top, #dedede, #b4b4b4); background: -o-linear-gradient(top, #dedede, #b4b4b4); background: linear-gradient(top, #dedede, #b4b4b4); }
 button:hover { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #cecece)); background: -webkit-linear-gradient(top, #f8f8f8, #cecece); background: -moz-linear-gradient(top, #f8f8f8, #cecece); background: -o-linear-gradient(top, #f8f8f8, #cecece); background: linear-gradient(top, #f8f8f8, #cecece); }
-button.active { -webkit-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); box-shadow: inset 1px 0.125rem 0.125rem rgba(0, 0, 0, 0.1); }
+button:active { -webkit-box-shadow: inset 1px 0.25rem 0.25rem rgba(0, 0, 0, 0.2); -moz-box-shadow: inset 1px 0.25rem 0.25rem rgba(0, 0, 0, 0.2); box-shadow: inset 1px 0.25rem 0.25rem rgba(0, 0, 0, 0.2); }
 
 .form-field-double input, .form-field-double select, .form-field-double textarea { width: 48%; display: inline-block; }
 
-.no-styling { display: inline-block; width: auto; max-width:99%; margin: 0; padding: 0; background: transparent; border: none; outline: none; }
+.no-styling { display: inline-block; width: auto; max-width: 99%; margin: 0; padding: 0; background: transparent; border: none; outline: none; }
 
 #container #header header { display: inline-block; }
 #container #header h1 { font-size: 1em; display: inline-block; font-weight: normal; }

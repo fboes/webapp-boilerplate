@@ -24,10 +24,12 @@ Setup
 3. Replace "`Flashy company`" with your name
 4. Replace "`http://flashy-domain`" with the domain-part your URL
 5. Replace "`/flashy-path/`" with the path-part your URL
-6. Replace `favicon.ico` (48×48px),  `favicon.png` (128×128px) and `apple-touch-icon.png` (144×144px) with your icon
+6. Replace `favicon.ico` (48×48px), `firefox-os-icon.png`(60×60px), `favicon.png` (128×128px) and `apple-touch-icon.png` (144×144px) with your icon
 7. Optional: Replace "`en`" with your desired locale
 8. Start coding!
 9. Activate caching in index.html by commenting line 2 & uncommenting line 3.
+
+Remeber: Firefox OS allows only one app per domain.
 
 Extended setup
 --------------
@@ -43,6 +45,13 @@ If you want to use this template with any kind of MVC framework:
 1. Move the whole project to your `public` folder
 2. Move the index.html to your `views` folder
 
+Updating
+--------
+
+Because your app will be cached locally on the device or browser, you will have to at least update the version string in `manifests/manifest.appcache` and `manifests/manifest.webapp`. Just replace `"version": "1.0"` in both files by incrementing this version number in some meaningful way.
+
+You may also want to check the JS stub in`js/main.js` for updating the local cache via Javascript.
+
 Things you may want to do
 -------------------------
 
@@ -53,6 +62,7 @@ Things you may want to do
 * You may also want to take a look at all the new [Javascript APIs](http://alistapart.com/article/environmental-design-with-the-device-api)
 * …and [HTML5 local storage](http://diveintohtml5.info/storage.html)
 * …and [Websockets](http://www.html5rocks.com/en/tutorials/websockets/basics/)
+* Build a [special icon for Firefox OS](https://www.mozilla.org/en-US/styleguide/products/firefox-os/icons/).
 
 Webbapp-Boilerplate legal stuff
 -------------------------------
