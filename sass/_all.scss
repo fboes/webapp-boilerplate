@@ -27,13 +27,19 @@ html {
 }
 label,
 button,
+.button,
 input,
 select,
 textarea {
 	font:inherit;
 	color:inherit;
-	display:block;
 	padding: 0.5 * $base-unit 2%;
+}
+label,
+input,
+select,
+textarea {
+	display:block;
 	width: 96%;
 }
 input,
@@ -76,12 +82,14 @@ input {
 		display:none;
 	}
 }
-button,
 select {
 	width:100%;
 }
+.button,
 button {
-	padding: 0 2%;
+	display:inline-block;
+	text-decoration:none;
+	text-align:center;
 	color: $color-button;
 	border:$base-unit / 16 solid rgba(0,0,0,0.3);
 	@include border-radius($base-unit / 2);
