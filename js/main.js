@@ -1,25 +1,40 @@
 (function ($) {
 	$.fn.examplePlugin = function (options) {
-		var behaviour = {
+		var main = {
 			options : $.extend(
 				{
 				},
 				options
 			),
-
 			elements : {
 				parent : null
 			},
+			values : {
 
+			},
 			init : function (el) {
 				this.elements.parent = el;
 				// Your stuff here
-				console.log("Ready and waiting…");
+				this.bindEvents();
+				this.update();
+			},
+			bindEvents : function () {
+				var that = this;
+				// Your stuff here
+				this.elements.parent.on('click', function (event) {
+					event.preventDefault();
+					event.stopPropagation();
+					that.update(); // $(this)
+				})
+			},
+			update : function () {
+				// Your stuff here
+				console.log('TheMachine wins');
 			}
 		}
 
 		return this.each(function() {
-			behaviour.init($(this));
+			main.init($(this));
 		});
 	}
 })(jQuery);
