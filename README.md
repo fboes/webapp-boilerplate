@@ -19,7 +19,7 @@ So all the cool stuff is here. :)
 Setup
 -----
 
-1. Replace "`Flashy title`" in all files with the name of your app
+1. Replace "`Flashy application name`" in all files with the name of your app
 2. Replace "`Flashy description`" in all files with the description of your app
 3. Replace "`Flashy company`" with your name
 4. Replace "`http://flashy-domain`" with the domain-part your URL
