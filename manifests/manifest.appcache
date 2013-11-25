@@ -6,6 +6,7 @@ CACHE:
 ../index.html
 ../apple-touch-icon.png
 ../favicon.ico
+../favicon.png
 //fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700
 //netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css
 ../css/styles.css

@@ -8,6 +8,7 @@
 		"48" : "/my-flashy-path/favicon.ico",
 		"60" : "/my-flashy-path/firefox-os-icon.png",
 		"128": "/my-flashy-path/favicon.png"
+		"152": "/my-flashy-path/apple-touch-icon.png"
 	},
 	"developer": {
 		"name": "Flashy company",

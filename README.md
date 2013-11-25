@@ -24,12 +24,12 @@ Setup
 3. Replace "`Flashy company`" with your name
 4. Replace "`http://flashy-domain`" with the domain-part your URL
 5. Replace "`/flashy-path/`" with the path-part your URL
-6. Replace `favicon.ico` (48×48px), `firefox-os-icon.png`(60×60px), `favicon.png` (128×128px) and `apple-touch-icon.png` (144×144px) with your icon
+6. Replace `favicon.ico` (48×48px), `firefox-os-icon.png`(60×60px), `favicon.png` (128×128px) and `apple-touch-icon.png` (152×152px) with your icon
 7. Optional: Replace "`en`" with your desired locale
 8. Start coding!
 9. Activate caching in index.html by commenting line 2 & uncommenting line 3.
 
-Remeber: Firefox OS allows only one app per domain.
+Remember: Firefox OS allows only one app per domain.
 
 Extended setup
 --------------
