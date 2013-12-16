@@ -24,7 +24,7 @@ Setup
 3. Replace "`Flashy company`" with your name.
 4. Replace "`http://flashy-domain`" with the domain-part your URL.
 5. Replace "`/flashy-path/`" with the path-part your URL.
-6. Replace `favicon.ico` (48×48px), `firefox-os-icon.png`(60×60px), `favicon.png` (128×128px) and `apple-touch-icon.png` (152×152px) with your icon.
+6. Replace `favicon.ico` (32×32px), `firefox-os-icon.png`(60×60px), `favicon.png` (128×128px) and `apple-touch-icon.png` (152×152px) with your icon.
 7. Optional: Replace "`en`" with your desired locale.
 8. Start coding!
 9. Activate caching in index.html by commenting line 2 & uncommenting line 3.
@@ -63,6 +63,7 @@ Things you may want to do
 * …and [HTML5 local storage](http://diveintohtml5.info/storage.html)
 * …and [Websockets](http://www.html5rocks.com/en/tutorials/websockets/basics/).
 * Build a [web tile for Windows 8](http://www.buildmypinnedsite.com/).
+* Understand the [more complex features of offline-first web apps](http://alistapart.com/article/offline-first).
 
 Webbapp-Boilerplate legal stuff
 -------------------------------

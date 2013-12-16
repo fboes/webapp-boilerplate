@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+	<msapplication>
+		<tile>
+			<square70x70logo src="apple-touch-icon.png"/><!-- windows-small-icon.png -->
+			<square150x150logo src="apple-touch-icon.png"/><!-- windows-medium-icon.png -->
+			<wide310x150logo src="apple-touch-icon.png"/><!-- windows-semi-big-icon.png -->
+			<square310x310logo src="apple-touch-icon.png"/><!-- windows-big-icon.png -->
+			<TileColor>#000000</TileColor>
+		</tile>
+		<!--notification>
+			<polling-uri src=""/>
+			<frequency>30</frequency>
+			<cycle>1</cycle>
+		</notification-->
+	</msapplication>
+</browserconfig>
