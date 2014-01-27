@@ -13,7 +13,7 @@ CACHE:
 ../js/main.js
 ../js/vendor/js-toolshed/js-toolshed.js
 ../js/vendor/js-toolshed/jquery-toolshed.js
-//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js
+//code.jquery.com/jquery-2.1.0.min.js
 
 #FALLBACK:
 #...
