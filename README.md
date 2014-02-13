@@ -8,7 +8,7 @@ It also uses [Google Webfonts](http://www.google.com/fonts/) and [Font Awesome](
 
 There is an [Apple Touch Icon](https://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html) & a [special icon for Firefox OS](https://www.mozilla.org/en-US/styleguide/products/firefox-os/icons/).
 
-To build your app, this boilerplate is configured to use [jQuery 2.0.0](http://jquery.com/), but you may replace it with any other Javascript library (e.g. [Zepto](http://zeptojs.com/)).
+To build your app, this boilerplate is configured to use [jQuery 2.1.0](http://jquery.com/), but you may replace it with any other Javascript library (e.g. [Zepto](http://zeptojs.com/)).
 
 For deployment as an offline app a [cache manifest](https://developer.mozilla.org/en/docs/HTML/Using_the_application_cache) and a [Mozilla App Manifest](https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest) has been added.
 
