@@ -25,7 +25,7 @@ Setup
 3. Replace "`Flashy company`" with your name.
 4. Replace "`http://flashy-domain`" with the domain-part your URL.
 5. Replace "`/flashy-path/`" with the path-part your URL.
-6. Replace `favicon.ico` (32×32px), `firefox-os-icon.png`(60×60px), `apple-touch-icon.png` (152×152px), , `favicon.png` (196×196px) and `ile.png` (310×310px) with your icon. You may want to use [IconSpring](https://github.com/fboes/iconspring) for generating all your icons.
+6. Replace `favicon.ico` (32×32px), `firefox-os-icon.png`(60×60px), `apple-touch-icon.png` (152×152px), `favicon.png` (196×196px) and `tile.png` (310×310px) with your icon. You may want to use [IconSpring](https://github.com/fboes/iconspring) for generating all your icons.
 7. Optional: Replace `"en"` with your desired locale.
 8. Start coding!
 9. Activate caching in index.html by commenting line 2 & uncommenting line 3.
@@ -51,7 +51,7 @@ Updating
 
 Because your app will be cached locally on the device or browser, you will have to at least update the version string in `manifests/manifest.appcache` and `manifests/manifest.webapp`. Just replace `"version": "1.0"` in both files by incrementing this version number in some meaningful way.
 
-You may also want to check the JS stub in`js/main.js` for updating the local cache via Javascript.
+You may also want to check the JS stub in `js/main.js` for updating the local cache via Javascript.
 
 Things you may want to do
 -------------------------
