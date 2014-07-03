@@ -4,5 +4,6 @@ AddType application/font-woff .woff
 AddType application/vnd.ms-fontobject .eot
 AddType application/x-font-ttf .ttf
 AddType application/x-font-opentype .otf
-AddType image/svg+xml .svg
+AddType image/svg+xml .svg .svgz
+AddEncoding gzip svgz
 # DirectoryIndex index.html
