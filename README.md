@@ -66,6 +66,11 @@ Things you may want to do
 * Build a [web tile for Windows 8](http://www.buildmypinnedsite.com/).
 * Understand the [more complex features of offline-first web apps](http://alistapart.com/article/offline-first).
 
+Version
+-------
+
+Version: 1.0 (2014-07-25)
+
 Webbapp-Boilerplate legal stuff
 -------------------------------
 
