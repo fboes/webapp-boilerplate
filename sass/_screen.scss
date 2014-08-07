@@ -42,7 +42,7 @@ table {
 	position:relative;
 	margin: 0 auto;
 
-	#header, #footer {
+	#banner, #footer {
 		color: $color-header;
 		@if ($background-color-header == $background-color-header-2) {
 			background: $background-color-header;
@@ -57,7 +57,7 @@ table {
 		}
 	}
 
-	#header {
+	#banner {
 		font: $font-size-large $font-family-header;
 		overflow:hidden;
 		@if $switch-fixed-header {

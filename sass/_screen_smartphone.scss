@@ -6,7 +6,7 @@ html {
 	@if not $switch-use-fluid {
 		max-width: toolshed-rem($width-screen-smartphone, $base-unit-absolute-smartphone, -2);
 	}
-	#header, #footer {
+	#banner, #footer {
 		.inner {
 			@if not $switch-use-fluid {
 				max-width: toolshed-rem($width-screen-smartphone, $base-unit-absolute-smartphone, -4);

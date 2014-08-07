@@ -133,9 +133,10 @@ button {
 }
 
 #container {
-	#header {
+	#banner {
 		header {
 			display:inline-block;
+			float:left;
 		}
 		h1 {
 			font-size : 1em;
