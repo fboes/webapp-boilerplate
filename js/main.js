@@ -82,5 +82,5 @@ if (typeof window.applicationCache != 'undefined'){
 */
 
 $(document).ready(function() {
-	$('#container').examplePlugin({});
+	//$('#container').examplePlugin({});
 });
