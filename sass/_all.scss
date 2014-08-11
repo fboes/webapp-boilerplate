@@ -21,7 +21,7 @@ html {
 	}
 }
 .form-field-half {
-	width:49%;
+	width:50%%;
 	float:left;
 	clear:none;
 }
@@ -33,14 +33,14 @@ select,
 textarea {
 	font:inherit;
 	color:inherit;
-	padding: 0.5 * $base-unit 2%;
+	padding: 0.5 * $base-unit;
 }
 label,
 input,
 select,
 textarea {
 	display:block;
-	width: 96%;
+	width: 100%;
 }
 input,
 select,
@@ -82,9 +82,6 @@ input {
 		display:none;
 	}
 }
-select {
-	width:100%;
-}
 .button,
 button {
 	display:inline-block;
@@ -117,14 +114,14 @@ button {
 	input,
 	select,
 	textarea {
-		width: 48%;
+		width: 50%;
 		display:inline-block;
 	}
 }
 .no-styling {
 	display:inline-block;
 	width:auto;
-	max-width:99%;
+	max-width:100%;
 	margin:0;
 	padding:0;
 	background:transparent;

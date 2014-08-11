@@ -22,6 +22,8 @@ ul {
 table {
 	width:100%;
 	margin-bottom:1em;
+	color: $color-table;
+	background-color: $backgroundcolor-table;
 	thead {
 		border-bottom:$base-unit/8 dotted;
 	}
@@ -34,6 +36,20 @@ table {
 		&.number {
 			text-align:right;
 			font-family: $font-family-fixed;
+		}
+	}
+	tr {
+		&.even {
+			color: $color-table-even;
+			background-color: $backgroundcolor-table-even;
+		}
+		&.focus {
+			color: $color-table-focus;
+			background-color: $backgroundcolor-table-focus;
+			&.even {
+				color: $color-table-focus-even;
+				background-color: $backgroundcolor-table-focus-even;
+			}
 		}
 	}
 }
