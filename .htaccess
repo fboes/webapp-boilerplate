@@ -7,3 +7,8 @@ AddType application/x-font-opentype .otf
 AddType image/svg+xml .svg .svgz
 AddEncoding gzip svgz
 # DirectoryIndex index.html
+
+<FilesMatch "^(README\.md|LICENSE\.txt|config\.rb|\.git.*)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
