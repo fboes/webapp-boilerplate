@@ -17,11 +17,17 @@ html {
 		.block-container-3 {
 			section {
 				width: (100%/3) - 2%;
+				&.double {
+					width: (100%/3*2) - 2%;
+				}
 			}
 		}
 		.block-container-4 {
 			section {
 				width: (100%/4) - 2%;
+				&.double {
+					width: (100%/2) - 2%;
+				}
 			}
 		}
 	}

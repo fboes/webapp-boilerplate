@@ -61,9 +61,9 @@ input[type=hidden] { display: none; }
 .button:hover, button:hover { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #cecece)); background: -webkit-linear-gradient(top, #f8f8f8, #cecece); background: -moz-linear-gradient(top, #f8f8f8, #cecece); background: -o-linear-gradient(top, #f8f8f8, #cecece); background: linear-gradient(top, #f8f8f8, #cecece); }
 .button:active, button:active { -webkit-box-shadow: inset 1px 0.25rem 0.25rem rgba(0, 0, 0, 0.2); -moz-box-shadow: inset 1px 0.25rem 0.25rem rgba(0, 0, 0, 0.2); box-shadow: inset 1px 0.25rem 0.25rem rgba(0, 0, 0, 0.2); }
 
-.form-field-double input, .form-field-double select, .form-field-double textarea { width: 48%; display: inline-block; }
+.form-field-double input, .form-field-double select, .form-field-double textarea { width: 50%; display: inline-block; }
 
-.no-styling { display: inline-block; width: auto; max-width: 99%; margin: 0; padding: 0; background: transparent; border: none; outline: none; }
+.no-styling { display: inline-block; width: auto; max-width: 100%; margin: 0; padding: 0; background: transparent; border: none; outline: none; }
 
 #container #banner header { display: inline-block; float: left; }
 #container #banner h1 { font-size: 1em; display: inline-block; font-weight: normal; }
@@ -108,7 +108,8 @@ input[type=hidden] { display: none; }
   #container #main .block-container:after, #container #main .block-container-2:after, #container #main .block-container-3:after, #container #main .block-container-4:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
   #container #main .block-container section, #container #main .block-container-2 section, #container #main .block-container-3 section, #container #main .block-container-4 section { float: left; width: 100%; }
   #container #main .block-container-4 { margin: 0 -1%; }
-  #container #main .block-container-4 section { width: 48%; margin-left: 1%; margin-right: 1%; } }
+  #container #main .block-container-4 section { width: 48%; margin-left: 1%; margin-right: 1%; }
+  #container #main .block-container-4 section.double { width: 100%; margin-left: 0; margin-right: 0; } }
 @media screen and (max-width: 479px) { .no-smartphone, .only-smartphone-landscape, .only-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 480px) { html { font-size: 12px; }
   #container #main .block-container-3 { margin: 0 -1%; }
@@ -117,11 +118,15 @@ input[type=hidden] { display: none; }
 @media screen and (min-width: 768px) { html { font-size: 16px; }
   #container #main .block-container-2 { margin: 0 -1%; }
   #container #main .block-container-2 section { width: 48%; margin-left: 1%; margin-right: 1%; }
-  #container #main .block-container-4 section { width: 31.33333%; } }
+  #container #main .block-container-2 section.double { width: 100%; margin-left: 0; margin-right: 0; }
+  #container #main .block-container-4 section { width: 31.33333%; }
+  #container #main .block-container-4 section.double { width: 64.66667%; margin-left: 1%; margin-right: 1%; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) { .only-smartphone, .only-smartphone-landscape, .no-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 1024px) { html { font-size: 16px; }
   #container #main .block-container-3 section { width: 31.33333%; }
-  #container #main .block-container-4 section { width: 23%; } }
+  #container #main .block-container-3 section.double { width: 64.66667%; }
+  #container #main .block-container-4 section { width: 23%; }
+  #container #main .block-container-4 section.double { width: 48%; } }
 @media screen and (min-width: 1024px) and (max-width: 1279px) { .only-smartphone, .only-smartphone-landscape, .only-tablet, .no-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 1280px) { html { font-size: 16px; }
   .only-smartphone, .only-smartphone-landscape, .only-tablet, .only-screen-tablet-landscape, .no-desktop { display: none !important; } }
