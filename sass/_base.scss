@@ -68,16 +68,6 @@ $color-content:               $color-font;
 $color-form-input:            $color-font;
 $color-form-input-disabled:   $color-grey-dark;
 
-$color-table:                 $color-black;
-$backgroundcolor-table:       $color-grey-light;
-$color-table-even:            $color-black;
-$backgroundcolor-table-even:  $color-white;
-$color-table-focus:           $color-white;
-$backgroundcolor-table-focus: $color-blue-dark;
-$color-table-focus-even:           $color-white;
-$backgroundcolor-table-focus-even: $color-blue;
-
-
 $border-color-form-input:     $color-grey;
 $border-color-form-input-disabled:$color-grey;
 
@@ -89,6 +79,15 @@ $background-color-form-input: $color-white;
 $background-color-form-input-disabled: $color-grey;
 $background-color-button:     $color-grey;
 $background-color-button-2:   $color-grey-dark;
+
+$color-table:                 inherit;
+$backgroundcolor-table:       transparent;
+$color-table-even:            inherit;
+$backgroundcolor-table-even:  $color-white;
+$color-table-focus:           inherit;
+$backgroundcolor-table-focus: $color-yellow;
+$color-table-focus-even:           inherit;
+$backgroundcolor-table-focus-even: $color-yellow-light;
 
 @if $switch-use-dark {
 	$color-font:                  $color-white;
@@ -113,6 +112,15 @@ $background-color-button-2:   $color-grey-dark;
 	$background-color-form-input-disabled: $color-grey;
 	$background-color-button:     $color-green-light;
 	$background-color-button-2:   $color-green;
+
+	$color-table:                 inherit;
+	$backgroundcolor-table:       transparent;
+	$color-table-even:            inherit;
+	$backgroundcolor-table-even:  $color-green-dark;
+	$color-table-focus:           inherit;
+	$backgroundcolor-table-focus: $color-blue-dark;
+	$color-table-focus-even:           inherit;
+	$backgroundcolor-table-focus-even: $color-blue;
 }
 
 @if $switch-transparent-header {

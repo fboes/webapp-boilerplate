@@ -77,28 +77,33 @@ input[type=hidden] { display: none; }
   a { color: #116787; }
   a:hover { color: #178ab4; }
   ul li { margin-left: 1.5rem; }
-  table { width: 100%; margin-bottom: 1em; color: #5a5a5a; background-color: #f6f6f6; }
+  table { width: 100%; margin-bottom: 1em; color: inherit; background-color: transparent; }
   table thead { border-bottom: 0.125rem dotted; }
   table tfoot { border-top: 0.125rem dotted; color: #b4b4b4; }
   table td, table th { padding: 0.125em 0.25em; }
   table td.number, table th.number { text-align: right; font-family: "Courier New", monospace; }
-  table tr.even { color: #5a5a5a; background-color: white; }
-  table tr.focus { color: white; background-color: #116787; }
-  table tr.focus.even { color: white; background-color: #33b5e5; }
+  table td.deleted, table th.deleted { text-decoration: line-through; color: #dedede; }
+  table td.deleted a, table th.deleted a { color: inherit; }
+  table tbody tr:nth-child(odd) { color: inherit; background-color: white; }
+  table tbody tr.focus { color: inherit; background-color: #ffbb33; }
+  table tbody tr.focus:nth-child(odd) { color: inherit; background-color: #ffd480; }
   #container { position: relative; margin: 0 auto; }
   #container #banner, #container #footer { color: #5a5a5a; background: rgba(222, 222, 222, 0.9); height: 4rem; }
   #container #banner .inner, #container #footer .inner { padding: 1rem 1rem; margin: auto; }
-  #container #banner { font: 1.5rem "Roboto", Tahoma, sans-serif; overflow: hidden; position: fixed; left: 0; width: 100%; top: 0; }
+  #container #banner { font: 1.5rem "Roboto", Tahoma, sans-serif; position: fixed; left: 0; width: 100%; top: 0; }
   #container #banner .header-icon { height: 3rem; margin: -0.5rem 1rem -0.5rem 0; vertical-align: -0.5rem; }
   #container #banner .nav { float: right; }
   #container #banner .nav else { display: inline-block; }
-  #container #banner .nav li { display: inline-block; margin-left: 0.25rem; }
-  #container #banner .nav li a { color: #5a5a5a; text-decoration: none; }
-  #container #banner .nav li a i { display: inline-block; text-align: center; width: 3rem; margin: -0.5rem 0; font-size: 1.25em; }
-  #container #banner .nav li a span.icon-hide { display: none; }
+  #container #banner .nav > li { display: inline-block; margin-left: 0.25rem; }
+  #container #banner .nav > li a { color: #5a5a5a; text-decoration: none; }
+  #container #banner .nav > li a i { display: inline-block; text-align: center; width: 3rem; margin: -0.5rem 0; font-size: 1.25em; }
+  #container #banner .nav > li a span.icon-hide { display: none; }
+  #container #banner .nav .nav-level-2 { background: rgba(222, 222, 222, 0.9); position: absolute; z-index: 1; right: 1rem; display: none; }
+  #container #banner .nav .nav-level-2 li { display: block; margin: 0; border-top: 0.125rem dotted; }
+  #container #banner .nav .nav-level-2 li a { display: block; padding: 0.25rem 1rem; }
   #container #footer { text-align: right; font-family: "Roboto", Tahoma, sans-serif; }
   #container #main { margin-top: 4rem; padding: 1rem 0; }
-  #container #main section { color: #5a5a5a; background: #f6f6f6; margin-bottom: 1rem; padding: 1.5rem; overflow: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
+  #container #main section { color: #5a5a5a; background: #f6f6f6; margin-bottom: 1rem; padding: 1.5rem; overflow: auto; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
   #container #main section h3 { font-size: 1.5rem; margin-bottom: 1rem; }
   #container #main section footer { padding-top: 0.5rem; margin-top: 1rem; color: #b4b4b4; border-top: 0.125rem dotted; font: 1rem "Roboto", Tahoma, sans-serif; }
   html { font-size: 12px; }

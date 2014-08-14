@@ -37,18 +37,27 @@ table {
 			text-align:right;
 			font-family: $font-family-fixed;
 		}
-	}
-	tr {
-		&.even {
-			color: $color-table-even;
-			background-color: $backgroundcolor-table-even;
+		&.deleted {
+			text-decoration: line-through;
+			color: $color-grey;
+			a {
+				color:inherit;
+			}
 		}
-		&.focus {
-			color: $color-table-focus;
-			background-color: $backgroundcolor-table-focus;
-			&.even {
-				color: $color-table-focus-even;
-				background-color: $backgroundcolor-table-focus-even;
+	}
+	tbody {
+		tr {
+			&:nth-child(odd) {
+				color: $color-table-even;
+				background-color: $backgroundcolor-table-even;
+			}
+			&.focus {
+				color: $color-table-focus;
+				background-color: $backgroundcolor-table-focus;
+				&:nth-child(odd) {
+					color: $color-table-focus-even;
+					background-color: $backgroundcolor-table-focus-even;
+				}
 			}
 		}
 	}
@@ -75,7 +84,6 @@ table {
 
 	#banner {
 		font: $font-size-large $font-family-header;
-		overflow:hidden;
 		@if $switch-fixed-header {
 			position:fixed;
 			left: 0;
@@ -96,7 +104,7 @@ table {
 				display:inline-block;
 			}
 			float:right;
-			li {
+			& > li {
 				display: inline-block;
 				margin-left: 0.25 * $base-unit;
 				a {
@@ -112,6 +120,22 @@ table {
 					}
 					span.icon-hide {
 						display:none;
+					}
+				}
+			}
+			.nav-level-2 {
+				background: $background-color-header;
+				position:absolute;
+				z-index:1;
+				right:$base-unit;
+				display:none;
+				li {
+					display:block;
+					margin:0;
+					border-top:$base-unit/8 dotted;
+					a {
+						display:block;
+						padding: 0.25 * $base-unit $base-unit;
 					}
 				}
 			}
@@ -141,9 +165,7 @@ table {
 			margin-bottom: $base-unit;
 			padding: 1.5 * $base-unit;
 			overflow:auto;
-			@include box-sizing(border-box);
 			@include single-box-shadow(rgba(0,0,0,0.1), 1px, $base-unit / 2, $base-unit / 2);
-
 			h3 {
 				font-size:$font-size-large;
 				margin-bottom:$base-unit;
