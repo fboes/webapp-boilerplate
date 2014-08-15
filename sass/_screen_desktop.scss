@@ -6,11 +6,11 @@ html {
 	@if not $switch-use-fluid {
 		max-width: toolshed-rem($width-screen-desktop, $base-unit-absolute-desktop, -2);
 	}
-	#banner, #footer {
-		.inner {
-			@if not $switch-use-fluid {
-				max-width: toolshed-rem($width-screen-desktop, $base-unit-absolute-desktop, -4);
-			}
+}
+#banner, #footer {
+	.inner {
+		@if not $switch-use-fluid {
+			max-width: toolshed-rem($width-screen-desktop, $base-unit-absolute-desktop, -4);
 		}
 	}
 }

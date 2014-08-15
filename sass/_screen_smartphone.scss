@@ -6,36 +6,36 @@ html {
 	@if not $switch-use-fluid {
 		max-width: toolshed-rem($width-screen-smartphone, $base-unit-absolute-smartphone, -2);
 	}
-	#banner, #footer {
-		.inner {
-			@if not $switch-use-fluid {
-				max-width: toolshed-rem($width-screen-smartphone, $base-unit-absolute-smartphone, -4);
-			}
+}
+#banner, #footer {
+	.inner {
+		@if not $switch-use-fluid {
+			max-width: toolshed-rem($width-screen-smartphone, $base-unit-absolute-smartphone, -4);
 		}
 	}
-	#main {
+}
+#main {
+	@include clearfix();
+	.block-container,
+	.block-container-2,
+	.block-container-3,
+	.block-container-4 {
 		@include clearfix();
-		.block-container,
-		.block-container-2,
-		.block-container-3,
-		.block-container-4 {
-			@include clearfix();
-			section {
-				float:left;
-				width: 100%;
-			}
+		section {
+			float:left;
+			width: 100%;
 		}
-		.block-container-4 {
-			margin: 0 -1%;
-			section {
-				width: (100%/2) - 2%;
-				margin-left: 1%;
-				margin-right: 1%;
-				&.double {
-					width: 100%;
-					margin-left: 0;
-					margin-right: 0;
-				}
+	}
+	.block-container-4 {
+		margin: 0 -1%;
+		section {
+			width: (100%/2) - 2%;
+			margin-left: 1%;
+			margin-right: 1%;
+			&.double {
+				width: 100%;
+				margin-left: 0;
+				margin-right: 0;
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 (function ($) {
-	$.fn.examplePlugin = function (options) {
+	$.fn.webapp = function (options) {
 		return this.each(function() {
 			var main = {
 				options : $.extend(
@@ -8,29 +8,42 @@
 					options
 				),
 				elements : {
-					parent : null
-				},
-				values : {
-
+					parent : null,
+					modal  : null,
 				},
 				init : function (el) {
 					this.elements.parent = el;
-					// Your stuff here
+					this.elements.modal  = el.find('#modal');
 					this.bindEvents();
-					this.update();
 				},
 				bindEvents : function () {
 					var that = this;
-					// Your stuff here
-					this.elements.parent.on('click', function (event) {
-						event.preventDefault();
-						event.stopPropagation();
-						that.update(); // $(this)
-					})
-				},
-				update : function () {
-					// Your stuff here
-					console.log('TheMachine wins');
+					if (this.elements.modal.length) {
+						this.elements.parent
+							.on('click','a.modal', function (event) {
+								event.stopPropagation();
+								event.preventDefault();
+								var openEl = that.elements.modal.find($(this).attr('href'));
+								if (openEl.length) {
+									that.elements.modal.find('section').hide();
+									that.elements.modal.css({
+										width: $( document ).width(),
+										height: $( document ).height()
+									}).show();
+									openEl.css({
+										left: (($( document ).width() - openEl.width()) / 2)
+									}).show();
+								}
+							})
+							.on('click','#modal section', function (event) {
+								event.stopPropagation();
+							})
+							.on('click','#modal', function (event) {
+								that.elements.modal.hide();
+								that.elements.modal.find('section').hide();
+							})
+						;
+					}
 				}
 			}
 
@@ -82,5 +95,5 @@ if (typeof window.applicationCache != 'undefined'){
 */
 
 $(document).ready(function() {
-	//$('#container').examplePlugin({});
+	$('body').webapp({});
 });

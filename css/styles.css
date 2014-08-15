@@ -88,50 +88,52 @@ input[type=hidden] { display: none; }
   table tbody tr.focus { color: inherit; background-color: #ffbb33; }
   table tbody tr.focus:nth-child(odd) { color: inherit; background-color: #ffd480; }
   #container { position: relative; margin: 0 auto; }
-  #container #banner, #container #footer { color: #5a5a5a; background: rgba(222, 222, 222, 0.9); height: 4rem; }
-  #container #banner .inner, #container #footer .inner { padding: 1rem 1rem; margin: auto; }
-  #container #banner { font: 1.5rem "Roboto", Tahoma, sans-serif; position: fixed; left: 0; width: 100%; top: 0; }
-  #container #banner .header-icon { height: 3rem; margin: -0.5rem 1rem -0.5rem 0; vertical-align: -0.5rem; }
-  #container #banner .nav { float: right; }
-  #container #banner .nav else { display: inline-block; }
-  #container #banner .nav > li { display: inline-block; margin-left: 0.25rem; }
-  #container #banner .nav > li a { color: #5a5a5a; text-decoration: none; }
-  #container #banner .nav > li a i { display: inline-block; text-align: center; width: 3rem; margin: -0.5rem 0; font-size: 1.25em; }
-  #container #banner .nav > li a span.icon-hide { display: none; }
-  #container #banner .nav .nav-level-2 { background: rgba(222, 222, 222, 0.9); position: absolute; z-index: 1; right: 1rem; display: none; }
-  #container #banner .nav .nav-level-2 li { display: block; margin: 0; border-top: 0.125rem dotted; }
-  #container #banner .nav .nav-level-2 li a { display: block; padding: 0.25rem 1rem; }
-  #container #footer { text-align: right; font-family: "Roboto", Tahoma, sans-serif; }
-  #container #main { margin-top: 4rem; padding: 1rem 0; }
-  #container #main section { color: #5a5a5a; background: #f6f6f6; margin-bottom: 1rem; padding: 1.5rem; overflow: auto; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
-  #container #main section h3 { font-size: 1.5rem; margin-bottom: 1rem; }
-  #container #main section footer { padding-top: 0.5rem; margin-top: 1rem; color: #b4b4b4; border-top: 0.125rem dotted; font: 1rem "Roboto", Tahoma, sans-serif; }
+  #banner, #footer { color: #5a5a5a; background: rgba(222, 222, 222, 0.9); height: 4rem; }
+  #banner .inner, #footer .inner { padding: 1rem 1rem; margin: auto; }
+  #banner { font: 1.5rem "Roboto", Tahoma, sans-serif; overflow: hidden; position: fixed; left: 0; width: 100%; top: 0; }
+  #banner .header-icon { height: 3rem; margin: -0.5rem 1rem -0.5rem 0; vertical-align: -0.5rem; }
+  #banner .nav { float: right; }
+  #banner .nav else { display: inline-block; }
+  #banner .nav > li { display: inline-block; margin-left: 0.25rem; }
+  #banner .nav > li a { color: #5a5a5a; text-decoration: none; }
+  #banner .nav > li a i { display: inline-block; text-align: center; width: 3rem; margin: -0.5rem 0; font-size: 1.25em; }
+  #banner .nav > li a span.icon-hide { display: none; }
+  #banner .nav .nav-level-2 { background: rgba(222, 222, 222, 0.9); position: absolute; z-index: 1; right: 1rem; display: none; }
+  #banner .nav .nav-level-2 li { display: block; margin: 0; border-top: 0.125rem dotted; }
+  #banner .nav .nav-level-2 li a { display: block; padding: 0.25rem 1rem; }
+  #footer { text-align: right; font-family: "Roboto", Tahoma, sans-serif; }
+  #main section, #modal section { color: #5a5a5a; background: #f6f6f6; margin-bottom: 1rem; padding: 1.5rem; overflow: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
+  #main section h3, #modal section h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+  #main section footer, #modal section footer { padding-top: 0.5rem; margin-top: 1rem; color: #b4b4b4; border-top: 0.125rem dotted; font: 1rem "Roboto", Tahoma, sans-serif; }
+  #main { padding: 1rem 0; margin-top: 4rem; }
+  #modal { position: absolute; width: 100%; height: 100%; top: 0; left: 0; height: 0; background: rgba(90, 90, 90, 0.9); z-index: 1; padding: 1rem; display: none; }
+  #modal section { position: fixed; display: none; }
   html { font-size: 12px; }
-  #container #main { zoom: 1; }
-  #container #main:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
-  #container #main .block-container, #container #main .block-container-2, #container #main .block-container-3, #container #main .block-container-4 { zoom: 1; }
-  #container #main .block-container:after, #container #main .block-container-2:after, #container #main .block-container-3:after, #container #main .block-container-4:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
-  #container #main .block-container section, #container #main .block-container-2 section, #container #main .block-container-3 section, #container #main .block-container-4 section { float: left; width: 100%; }
-  #container #main .block-container-4 { margin: 0 -1%; }
-  #container #main .block-container-4 section { width: 48%; margin-left: 1%; margin-right: 1%; }
-  #container #main .block-container-4 section.double { width: 100%; margin-left: 0; margin-right: 0; } }
+  #main { zoom: 1; }
+  #main:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
+  #main .block-container, #main .block-container-2, #main .block-container-3, #main .block-container-4 { zoom: 1; }
+  #main .block-container:after, #main .block-container-2:after, #main .block-container-3:after, #main .block-container-4:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }
+  #main .block-container section, #main .block-container-2 section, #main .block-container-3 section, #main .block-container-4 section { float: left; width: 100%; }
+  #main .block-container-4 { margin: 0 -1%; }
+  #main .block-container-4 section { width: 48%; margin-left: 1%; margin-right: 1%; }
+  #main .block-container-4 section.double { width: 100%; margin-left: 0; margin-right: 0; } }
 @media screen and (max-width: 479px) { .no-smartphone, .only-smartphone-landscape, .only-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 480px) { html { font-size: 12px; }
-  #container #main .block-container-3 { margin: 0 -1%; }
-  #container #main .block-container-3 section { width: 48%; margin-left: 1%; margin-right: 1%; } }
+  #main .block-container-3 { margin: 0 -1%; }
+  #main .block-container-3 section { width: 48%; margin-left: 1%; margin-right: 1%; } }
 @media screen and (min-width: 480px) and (max-width: 767px) { .only-smartphone, .no-smartphone-landscape, .only-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 768px) { html { font-size: 16px; }
-  #container #main .block-container-2 { margin: 0 -1%; }
-  #container #main .block-container-2 section { width: 48%; margin-left: 1%; margin-right: 1%; }
-  #container #main .block-container-2 section.double { width: 100%; margin-left: 0; margin-right: 0; }
-  #container #main .block-container-4 section { width: 31.33333%; }
-  #container #main .block-container-4 section.double { width: 64.66667%; margin-left: 1%; margin-right: 1%; } }
+  #main .block-container-2 { margin: 0 -1%; }
+  #main .block-container-2 section { width: 48%; margin-left: 1%; margin-right: 1%; }
+  #main .block-container-2 section.double { width: 100%; margin-left: 0; margin-right: 0; }
+  #main .block-container-4 section { width: 31.33333%; }
+  #main .block-container-4 section.double { width: 64.66667%; margin-left: 1%; margin-right: 1%; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) { .only-smartphone, .only-smartphone-landscape, .no-tablet, .only-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 1024px) { html { font-size: 16px; }
-  #container #main .block-container-3 section { width: 31.33333%; }
-  #container #main .block-container-3 section.double { width: 64.66667%; }
-  #container #main .block-container-4 section { width: 23%; }
-  #container #main .block-container-4 section.double { width: 48%; } }
+  #main .block-container-3 section { width: 31.33333%; }
+  #main .block-container-3 section.double { width: 64.66667%; }
+  #main .block-container-4 section { width: 23%; }
+  #main .block-container-4 section.double { width: 48%; } }
 @media screen and (min-width: 1024px) and (max-width: 1279px) { .only-smartphone, .only-smartphone-landscape, .only-tablet, .no-screen-tablet-landscape, .only-desktop { display: none !important; } }
 @media screen and (min-width: 1280px) { html { font-size: 16px; }
   .only-smartphone, .only-smartphone-landscape, .only-tablet, .only-screen-tablet-landscape, .no-desktop { display: none !important; } }

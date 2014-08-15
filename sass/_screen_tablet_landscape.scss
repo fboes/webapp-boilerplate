@@ -6,28 +6,28 @@ html {
 	@if not $switch-use-fluid {
 		max-width: toolshed-rem($width-screen-tablet-landscape, $base-unit-absolute-tablet-landscape, -2);
 	}
-	#banner, #footer {
-		.inner {
-			@if not $switch-use-fluid {
-				max-width: toolshed-rem($width-screen-tablet-landscape, $base-unit-absolute-tablet-landscape, -4);
+}
+#banner, #footer {
+	.inner {
+		@if not $switch-use-fluid {
+			max-width: toolshed-rem($width-screen-tablet-landscape, $base-unit-absolute-tablet-landscape, -4);
+		}
+	}
+}
+#main {
+	.block-container-3 {
+		section {
+			width: (100%/3) - 2%;
+			&.double {
+				width: (100%/3*2) - 2%;
 			}
 		}
 	}
-	#main {
-		.block-container-3 {
-			section {
-				width: (100%/3) - 2%;
-				&.double {
-					width: (100%/3*2) - 2%;
-				}
-			}
-		}
-		.block-container-4 {
-			section {
-				width: (100%/4) - 2%;
-				&.double {
-					width: (100%/2) - 2%;
-				}
+	.block-container-4 {
+		section {
+			width: (100%/4) - 2%;
+			&.double {
+				width: (100%/2) - 2%;
 			}
 		}
 	}

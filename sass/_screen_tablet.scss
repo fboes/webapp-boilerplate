@@ -6,35 +6,35 @@ html {
 	@if not $switch-use-fluid {
 		max-width: toolshed-rem($width-screen-tablet, $base-unit-absolute-tablet, -2);
 	}
-	#banner, #footer {
-		.inner {
-			@if not $switch-use-fluid {
-				max-width: toolshed-rem($width-screen-tablet, $base-unit-absolute-tablet, -4);
+}
+#banner, #footer {
+	.inner {
+		@if not $switch-use-fluid {
+			max-width: toolshed-rem($width-screen-tablet, $base-unit-absolute-tablet, -4);
+		}
+	}
+}
+#main {
+	.block-container-2 {
+		margin: 0 -1%;
+		section {
+			width: (100%/2) - 2%;
+			margin-left: 1%;
+			margin-right: 1%;
+			&.double {
+				width: 100%;
+				margin-left: 0;
+				margin-right: 0;
 			}
 		}
 	}
-	#main {
-		.block-container-2 {
-			margin: 0 -1%;
-			section {
-				width: (100%/2) - 2%;
+	.block-container-4 {
+		section {
+			width: (100%/3) - 2%;
+			&.double {
+				width: (100%/3*2) - 2%;
 				margin-left: 1%;
 				margin-right: 1%;
-				&.double {
-					width: 100%;
-					margin-left: 0;
-					margin-right: 0;
-				}
-			}
-		}
-		.block-container-4 {
-			section {
-				width: (100%/3) - 2%;
-				&.double {
-					width: (100%/3*2) - 2%;
-					margin-left: 1%;
-					margin-right: 1%;
-				}
 			}
 		}
 	}
