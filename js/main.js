@@ -23,16 +23,20 @@
 							.on('click','a.modal', function (event) {
 								event.stopPropagation();
 								event.preventDefault();
-								var openEl = that.elements.modal.find($(this).attr('href'));
-								if (openEl.length) {
-									that.elements.modal.find('section').hide();
-									that.elements.modal.css({
-										width: $( document ).width(),
-										height: $( document ).height()
-									}).show();
-									openEl.css({
-										left: (($( document ).width() - openEl.width()) / 2)
-									}).show();
+								var links = $(this).attr('href').split('#');
+								if (!links[1]) {
+									links[1] = links[0];
+									links[0] = null;
+								}
+								var openEl = that.elements.modal.find('#' + links[1]);
+								if (!openEl.length && links[0]) {
+									$.get(links[0],function(data,status){
+										that.elements.modal.find('aside').append(data.replace(/<section/,'<section id="'+links[1]+'"'));
+										that.openModal(that.elements.modal.find('#' + links[1]));
+									})
+								}
+								else if (openEl.length) {
+									that.openModal(openEl);
 								}
 							})
 							.on('click','#modal section', function (event) {
@@ -43,6 +47,18 @@
 								that.elements.modal.find('section').hide();
 							})
 						;
+					}
+				},
+				openModal : function (openEl) {
+					if (openEl.length) {
+						this.elements.modal.find('section').hide();
+						this.elements.modal.css({
+							width: $( document ).width(),
+							height: $( document ).height()
+						}).show();
+						openEl.css({
+							left: (($( document ).width() - openEl.width()) / 2)
+						}).show();
 					}
 				}
 			}
