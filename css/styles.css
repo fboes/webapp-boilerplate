@@ -67,10 +67,10 @@ input[type=hidden] { display: none; }
 
 #container #banner header { display: inline-block; float: left; }
 #container #banner h1 { font-size: 1em; display: inline-block; font-weight: normal; }
-#container #banner nav { display: inline-block; float: right; }
-#container #banner .nav { float: right; }
-#container #banner .nav else { display: inline-block; }
-#container #banner .nav li a span.icon-hide { display: none; }
+#container #banner .nav-meta { display: inline-block; float: right; }
+#container #banner .nav-meta .nav { float: right; }
+#container #banner .nav-meta .nav else { display: inline-block; }
+#container #banner .nav-meta .nav li a span.icon-hide { display: none; }
 
 @media screen { body { color: #5a5a5a; background: #dedede; padding: 0 1rem; font: 1.25rem "Roboto Slab", Garamond, serif; line-height: 1.5em; }
   del { color: #b4b4b4; }
@@ -90,24 +90,31 @@ input[type=hidden] { display: none; }
   #container { position: relative; margin: 0 auto; }
   #banner, #footer { color: #5a5a5a; background: rgba(222, 222, 222, 0.9); height: 4rem; }
   #banner .inner, #footer .inner { padding: 1rem 1rem; margin: auto; }
-  #banner { font: 1.5rem "Roboto", Tahoma, sans-serif; overflow: hidden; position: fixed; left: 0; width: 100%; top: 0; }
+  #banner { font: 1.5rem "Roboto", Tahoma, sans-serif; position: fixed; left: 0; width: 100%; top: 0; }
+  #banner a { text-decoration: none; color: inherit; }
+  #banner .header-nav { margin-left: -1.6rem; margin-right: 0.3rem; font-size: 2rem; vertical-align: -0.1rem; }
   #banner .header-icon { height: 3rem; margin: -0.5rem 1rem -0.5rem 0; vertical-align: -0.5rem; }
-  #banner .nav { float: right; }
-  #banner .nav else { display: inline-block; }
-  #banner .nav > li { display: inline-block; margin-left: 0.25rem; }
-  #banner .nav > li a { color: #5a5a5a; text-decoration: none; }
-  #banner .nav > li a i { display: inline-block; text-align: center; width: 3rem; margin: -0.5rem 0; font-size: 1.25em; }
-  #banner .nav > li a span.icon-hide { display: none; }
-  #banner .nav .nav-level-2 { background: rgba(222, 222, 222, 0.9); position: absolute; z-index: 1; right: 1rem; display: none; }
-  #banner .nav .nav-level-2 li { display: block; margin: 0; border-top: 0.125rem dotted; }
-  #banner .nav .nav-level-2 li a { display: block; padding: 0.25rem 1rem; }
+  #banner .nav { margin-bottom: 0; list-style: none; }
+  #banner .nav-main { display: none; position: absolute; top: 4rem; left: 0; color: #5a5a5a; background-color: #dedede; font-size: 1.5rem; }
+  #banner .nav-main li { margin: 0; }
+  #banner .nav-main li a { display: block; padding: 1rem 1.5rem; }
+  #banner .nav-main li a:hover { background-color: #5a5a5a; color: #dedede; }
+  #banner .nav-meta .nav { float: right; }
+  #banner .nav-meta .nav else { display: inline-block; }
+  #banner .nav-meta .nav li { display: inline-block; margin-left: 0.25rem; }
+  #banner .nav-meta .nav li a i { display: inline-block; text-align: center; width: 3rem; margin: -0.5rem 0; font-size: 1.25em; }
+  #banner .nav-meta .nav li a span.icon-hide { display: none; }
   #footer { text-align: right; font-family: "Roboto", Tahoma, sans-serif; }
   #main section, #modal section { color: #5a5a5a; background: #f6f6f6; margin-bottom: 1rem; padding: 1.5rem; overflow: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); box-shadow: 1px 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
   #main section h3, #modal section h3 { font-size: 1.5rem; margin-bottom: 1rem; }
   #main section footer, #modal section footer { padding-top: 0.5rem; margin-top: 1rem; color: #b4b4b4; border-top: 0.125rem dotted; font: 1rem "Roboto", Tahoma, sans-serif; }
   #main { padding: 1rem 0; margin-top: 4rem; }
   #modal { position: absolute; width: 100%; height: 100%; top: 0; left: 0; height: 0; background: rgba(90, 90, 90, 0.9); z-index: 1; padding: 1rem; display: none; }
-  #modal section { position: fixed; display: none; }
+  #modal section { position: fixed; display: none; min-width: 50%; }
+  #messages section { background-color: #ffd480; }
+  #messages section ul { margin: 0; padding: 0; list-style: none; }
+  #messages section ul li { margin: 0 0 0.5rem; }
+  #messages section ul li.error { background-color: #ff9191; }
   html { font-size: 12px; }
   #main { zoom: 1; }
   #main:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }

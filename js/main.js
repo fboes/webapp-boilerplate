@@ -8,16 +8,32 @@
 					options
 				),
 				elements : {
-					parent : null,
-					modal  : null,
+					parent   : null,
+					modal    : null,
+					messages : null,
+					banner   : null,
 				},
 				init : function (el) {
-					this.elements.parent = el;
-					this.elements.modal  = el.find('#modal');
+					this.elements.parent   = el;
+					this.elements.modal    = el.find('#modal');
+					this.elements.messages = el.find('#messages');
+					this.elements.banner   = el.find('#banner');
+					if (this.elements.messages.length) {
+						var timer = setTimeout(function () {
+							that.elements.messages.slideUp('fast');
+						}, 2000);
+					}
 					this.bindEvents();
 				},
 				bindEvents : function () {
 					var that = this;
+					if (this.elements.banner) {
+						this.elements.banner.on('click','.header-menu',function(event) {
+							event.preventDefault();
+							that.elements.banner.find('.nav-main').toggle();
+							//that.elements.modal.toggle();
+						});
+					}
 					if (this.elements.modal.length) {
 						this.elements.parent
 							.on('click','a.modal', function (event) {

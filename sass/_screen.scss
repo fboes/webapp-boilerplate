@@ -85,59 +85,75 @@ table {
 
 #banner {
 	font: $font-size-large $font-family-header;
-	overflow:hidden;
 	@if $switch-fixed-header {
 		position:fixed;
 		left: 0;
 		width:100%;
 		top: 0;
 	}
-
+	a {
+		text-decoration: none;
+		color:inherit;
+	}
+	.header-nav {
+		margin-left: -1.6rem;
+		margin-right: 0.3rem;
+		font-size: 2rem;
+		vertical-align: -0.1rem;
+	}
 	.header-icon {
 		height: 3 * $base-unit;
 		margin: -0.5 * $base-unit $base-unit -0.5 * $base-unit 0;
 		vertical-align: -0.5 * $base-unit;
 	}
 	.nav {
-		@if not $switch-use-navigation {
-			display:none;
-		}
-		else {
-			display:inline-block;
-		}
-		float:right;
-		& > li {
-			display: inline-block;
-			margin-left: 0.25 * $base-unit;
+		margin-bottom:0;
+		list-style:none;
+	}
+	.nav-main {
+		display:none;
+		position:absolute;
+		top:4rem;
+		left:0;
+		color: $color-font;
+		background-color:$background-color;
+		font-size:$font-size-large;
+		li {
+			margin:0;
 			a {
-				color: $color-black;
-				text-decoration:none;
-				i {
-					display:inline-block;
-					text-align:center;
-					width: 3 * $base-unit;
-					//height: 3 * $base-unit;
-					margin: -0.5 * $base-unit 0;
-					font-size:1.25em;
-				}
-				span.icon-hide {
-					display:none;
+				display:block;
+				padding:1rem 1.5rem;
+				&:hover {
+					background-color: $color-font;
+					color:$background-color;
 				}
 			}
 		}
-		.nav-level-2 {
-			background: $background-color-header;
-			position:absolute;
-			z-index:1;
-			right:$base-unit;
-			display:none;
+	}
+	.nav-meta{
+		.nav {
+			@if not $switch-use-navigation {
+				display:none;
+			}
+			else {
+				display:inline-block;
+			}
+			float:right;
 			li {
-				display:block;
-				margin:0;
-				border-top:$base-unit/8 dotted;
+				display: inline-block;
+				margin-left: 0.25 * $base-unit;
 				a {
-					display:block;
-					padding: 0.25 * $base-unit $base-unit;
+					i {
+						display:inline-block;
+						text-align:center;
+						width: 3 * $base-unit;
+						//height: 3 * $base-unit;
+						margin: -0.5 * $base-unit 0;
+						font-size:1.25em;
+					}
+					span.icon-hide {
+						display:none;
+					}
 				}
 			}
 		}
@@ -199,5 +215,22 @@ table {
 	section {
 		position:fixed;
 		display:none;
+		min-width:50%;
+	}
+}
+#messages {
+	section {
+		background-color: $color-yellow-light;
+		ul {
+			margin:0;
+			padding:0;
+			list-style:none;
+			li {
+				margin:0 0 0.5rem;
+				&.error {
+					background-color: $color-red-light;
+				}
+			}
+		}
 	}
 }

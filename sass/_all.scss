@@ -140,22 +140,22 @@ button {
 			display:inline-block;
 			font-weight:normal;
 		}
-		nav {
+		.nav-meta {
 			display:inline-block;
 			float:right;
-		}
-		.nav {
-			@if not $switch-use-navigation {
-				display:none;
-			}
-			else {
-				display:inline-block;
-			}
-			float:right;
-			li {
-				a {
-					span.icon-hide {
-						display:none;
+			.nav {
+				@if not $switch-use-navigation {
+					display:none;
+				}
+				else {
+					display:inline-block;
+				}
+				float:right;
+				li {
+					a {
+						span.icon-hide {
+							display:none;
+						}
 					}
 				}
 			}

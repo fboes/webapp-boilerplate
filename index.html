@@ -30,18 +30,22 @@
 		<div id="banner" class="header">
 			<div class="inner">
 				<header role="banner">
-					<a href="#"><img src="apple-touch-icon.png" alt="Home" class="header-icon" /></a>
+					<a href="#" class="header-menu">
+						<i class="fa fa-bars header-nav"></i>
+						<img src="apple-touch-icon.png" alt="Home" class="header-icon" />
+					</a>
 					<h1>Flashy application name</h1>
 				</header>
-				<nav role="navigation">
-					<ul class="nav nav-level-1">
+				<nav class="nav-main" role="navigation">
+					<ul class="nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Settings</a></li>
+					</ul>
+				</nav>
+				<nav class="nav-meta">
+					<ul class="nav">
 						<li><a href="#modal-plus" class="modal"><i class="fa fa-plus"></i> <span class="icon-hide">Modal window</span></a></li>
-						<li><a href="#"><i class="fa fa-ellipsis-vertical"></i> <span class="icon-hide">Menu</span></a>
-							<ul class="nav-level-2">
-								<li><a href="#">New…</a></li>
-								<li><a href="#">Save…</a></li>
-							</ul>
-						</li>
+						<li><a href="#"><i class="fa fa-bars"></i><span class="icon-hide">Menu</span></a></li>
 						<li><a href="#"><i class="fa fa-search"></i> <span class="icon-hide">Search</span></a></li>
 					</ul>
 				</nav>
@@ -49,7 +53,14 @@
 		</div>
 		<div id="main" class="main">
 			<main role="main">
-				<div class="block-container-2">
+					<!--div class="block-container-1" id="messages">
+						<section>
+							<ul>
+								<li class="success">Success</li>
+							</ul>
+						</section>
+					</div-->
+					<div class="block-container-2">
 					<section>
 						<h3>Block heading</h3>
 						<form action="." method="get">
