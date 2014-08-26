@@ -46,7 +46,7 @@
 								}
 								var openEl = that.elements.modal.find('#' + links[1]);
 								if (!openEl.length && links[0]) {
-									$.get(links[0],function(data,status){
+									$.get(links[0]+'?ajax',function(data,status){
 										that.elements.modal.find('aside').append(data.replace(/<section/,'<section id="'+links[1]+'"'));
 										that.openModal(that.elements.modal.find('#' + links[1]));
 									})
@@ -74,7 +74,7 @@
 						}).show();
 						openEl.css({
 							left: (($( document ).width() - openEl.width()) / 2)
-						}).show();
+						}).show().find(':input:first').focus();
 					}
 				}
 			}
