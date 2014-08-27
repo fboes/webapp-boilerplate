@@ -51,11 +51,11 @@ label, button, .button, input, select, textarea { font: inherit; color: inherit;
 
 label, input, select, textarea { display: block; width: 100%; }
 
-input, select, textarea { color: #5a5a5a; background: white; outline: 0.15rem solid #dedede; border: none; -webkit-border-radius: 0.15rem; -moz-border-radius: 0.15rem; -ms-border-radius: 0.15rem; -o-border-radius: 0.15rem; border-radius: 0.15rem; }
-input[disabled], select[disabled], textarea[disabled] { color: #b4b4b4; background-color: #dedede; outline-color: #dedede; }
+input, select, textarea { color: #5a5a5a; background: white; border: 0.15rem solid #dedede; -webkit-border-radius: 0.25rem; -moz-border-radius: 0.25rem; -ms-border-radius: 0.25rem; -o-border-radius: 0.25rem; border-radius: 0.25rem; }
+input[disabled], select[disabled], textarea[disabled] { color: #b4b4b4; background-color: #dedede; border-color: #dedede; }
 
 input[type=radio], input[type=checkbox], input[type=file], input[type=submit] { display: inline-block; width: auto !important; padding: 0; margin: 0 0.5rem 0 0; }
-input[type=radio], input[type=checkbox], input[type=file], input[type=submit], input[type=range] { background: none; outline: none; border: none; }
+input[type=radio], input[type=checkbox], input[type=file], input[type=submit], input[type=range] { background: none; border: none; }
 input[type=range] { vertical-align: middle; }
 input[type=hidden] { display: none; }
 
@@ -65,7 +65,7 @@ input[type=hidden] { display: none; }
 
 .form-field-double input, .form-field-double select, .form-field-double textarea { width: 50%; display: inline-block; }
 
-.no-styling { display: inline-block; width: auto; max-width: 100%; margin: 0; padding: 0; background: transparent; border: none; outline: none; }
+.no-styling { display: inline-block; width: auto; max-width: 100%; margin: 0; padding: 0; background: transparent; border: none; }
 
 #container #banner header { display: inline-block; float: left; }
 #container #banner h1 { font-size: 1em; display: inline-block; font-weight: normal; }
@@ -113,10 +113,13 @@ input[type=hidden] { display: none; }
   #main { padding: 1rem 0; margin-top: 4rem; }
   #modal { position: absolute; width: 100%; height: 100%; top: 0; left: 0; height: 0; background: rgba(90, 90, 90, 0.9); z-index: 1; padding: 1rem; display: none; }
   #modal section { position: fixed; display: none; min-width: 50%; }
+  #messages { position: absolute; width: 100%; }
   #messages section { background-color: #ffd480; }
   #messages section ul { margin: 0; padding: 0; list-style: none; }
   #messages section ul li { margin: 0 0 0.5rem; }
   #messages section ul li.error { background-color: #ff9191; }
+  .js-slide { max-height: 20rem; overflow-y: hidden; -webkit-transition: max-height 0.5s ease-in-out; -moz-transition: max-height 0.5s ease-in-out; -o-transition: max-height 0.5s ease-in-out; transition: max-height 0.5s ease-in-out; }
+  .js-slide.js-hidden { max-height: 0; }
   html { font-size: 12px; }
   #main { zoom: 1; }
   #main:after { display: block; visibility: hidden; height: 0; clear: both; content: "."; }

@@ -219,6 +219,8 @@ table {
 	}
 }
 #messages {
+	position:absolute;
+	width:100%;
 	section {
 		background-color: $color-yellow-light;
 		ul {
@@ -232,5 +234,13 @@ table {
 				}
 			}
 		}
+	}
+}
+.js-slide {
+	max-height: (20 * $base-unit);
+	overflow-y:hidden;
+	@include transition(max-height 0.5s ease-in-out);
+	&.js-hidden {
+		max-height: 0;
 	}
 }

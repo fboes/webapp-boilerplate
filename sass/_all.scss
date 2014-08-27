@@ -47,13 +47,12 @@ select,
 textarea {
 	color: $color-form-input;
 	background: $background-color-form-input;
-	outline: 0.15rem solid $border-color-form-input;
-	border:none;
-	@include border-radius(0.15rem);
+	border: 0.15rem solid $border-color-form-input;
+	@include border-radius(0.25rem);
 	&[disabled] {
 		color: $color-form-input-disabled;
 		background-color: $background-color-form-input-disabled;
-		outline-color: $border-color-form-input-disabled;
+		border-color: $border-color-form-input-disabled;
 	}
 }
 input {
@@ -72,7 +71,6 @@ input {
 	&[type=submit],
 	&[type=range] {
 		background:none;
-		outline:none;
 		border:none;
 	}
 	&[type=range] {
@@ -126,7 +124,6 @@ button {
 	padding:0;
 	background:transparent;
 	border:none;
-	outline:none;
 }
 
 #container {
