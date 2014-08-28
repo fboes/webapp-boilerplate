@@ -63,6 +63,17 @@ input[type=hidden] { display: none; }
 .button:hover, button:hover { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #cecece)); background: -webkit-linear-gradient(top, #f8f8f8, #cecece); background: -moz-linear-gradient(top, #f8f8f8, #cecece); background: -o-linear-gradient(top, #f8f8f8, #cecece); background: linear-gradient(top, #f8f8f8, #cecece); }
 .button:active, button:active { -webkit-box-shadow: inset 1px 0.25rem 0.25rem rgba(0, 0, 0, 0.2); -moz-box-shadow: inset 1px 0.25rem 0.25rem rgba(0, 0, 0, 0.2); box-shadow: inset 1px 0.25rem 0.25rem rgba(0, 0, 0, 0.2); }
 
+input[type="radio"], input[type="checkbox"] { display: none; }
+input[type="radio"] + span:before, input[type="checkbox"] + span:before { font-family: 'FontAwesome'; display: inline-block; width: 1.5rem; }
+
+input[type="radio"] + span:before { content: "\f1db"; /* circle-blank */ }
+
+input[type="radio"]:checked + span:before { content: "\f111"; /* circle */ }
+
+input[type="checkbox"] + span:before { content: "\f096"; /* check-empty */ }
+
+input[type="checkbox"]:checked + span:before { content: "\f046"; /* check */ }
+
 .form-field-double input, .form-field-double select, .form-field-double textarea { width: 50%; display: inline-block; }
 
 .no-styling { display: inline-block; width: auto; max-width: 100%; margin: 0; padding: 0; background: transparent; border: none; }
