@@ -112,13 +112,13 @@ input[type=hidden] { display: none; }
   #main section footer, #modal section footer { padding-top: 0.5rem; margin-top: 1rem; color: #b4b4b4; border-top: 0.125rem dotted; font: 1rem "Roboto", Tahoma, sans-serif; }
   #main { padding: 1rem 0; margin-top: 4rem; }
   #modal { position: absolute; width: 100%; height: 100%; top: 0; left: 0; height: 0; background: rgba(90, 90, 90, 0.9); z-index: 1; padding: 1rem; display: none; }
-  #modal section { position: fixed; display: none; min-width: 50%; }
+  #modal section { position: fixed; display: none; min-width: 80%; overflow: auto; max-height: 90%; }
   #messages { position: absolute; width: 100%; }
   #messages section { background-color: #ffd480; }
   #messages section ul { margin: 0; padding: 0; list-style: none; }
   #messages section ul li { margin: 0 0 0.5rem; }
   #messages section ul li.error { background-color: #ff9191; }
-  .js-slide { max-height: 20rem; overflow-y: hidden; -webkit-transition: max-height 0.5s ease-in-out; -moz-transition: max-height 0.5s ease-in-out; -o-transition: max-height 0.5s ease-in-out; transition: max-height 0.5s ease-in-out; }
+  .js-slide { max-height: 60rem; overflow-y: hidden; -webkit-transition: max-height 0.5s ease-in-out; -moz-transition: max-height 0.5s ease-in-out; -o-transition: max-height 0.5s ease-in-out; transition: max-height 0.5s ease-in-out; }
   .js-slide.js-hidden { max-height: 0; }
   html { font-size: 12px; }
   #main { zoom: 1; }

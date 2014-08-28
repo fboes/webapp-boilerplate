@@ -215,7 +215,9 @@ table {
 	section {
 		position:fixed;
 		display:none;
-		min-width:50%;
+		min-width:80%;
+		overflow:auto;
+		max-height:90%;
 	}
 }
 #messages {
@@ -237,7 +239,7 @@ table {
 	}
 }
 .js-slide {
-	max-height: (20 * $base-unit);
+	max-height: (60 * $base-unit);
 	overflow-y:hidden;
 	@include transition(max-height 0.5s ease-in-out);
 	&.js-hidden {
