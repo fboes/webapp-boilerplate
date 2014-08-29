@@ -15,6 +15,12 @@ html {
 	}
 }
 #main {
+	.block-container,
+	.block-container-1 {
+		ul.col {
+			@include column-count(4);
+		}
+	}
 	.block-container-3 {
 		section {
 			width: (100%/3) - 2%;
@@ -30,5 +36,10 @@ html {
 				width: (100%/2) - 2%;
 			}
 		}
+	}
+}
+#modal {
+	section {
+		min-width:80%;
 	}
 }

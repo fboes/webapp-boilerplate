@@ -20,10 +20,7 @@ ul {
 	}
 }
 table {
-	width:100%;
 	margin-bottom:1em;
-	color: $color-table;
-	background-color: $backgroundcolor-table;
 	thead {
 		border-bottom:$base-unit/8 dotted;
 	}
@@ -35,7 +32,14 @@ table {
 		padding:0.125em 0.25em;
 		&.number {
 			text-align:right;
+		}
+	}
+	td{
+		&.number {
 			font-family: $font-family-fixed;
+		}
+		&.empty {
+			color:$color-grey;
 		}
 		&.deleted {
 			text-decoration: line-through;
@@ -45,18 +49,24 @@ table {
 			}
 		}
 	}
-	tbody {
-		tr {
-			&:nth-child(odd) {
-				color: $color-table-even;
-				background-color: $backgroundcolor-table-even;
-			}
-			&.focus {
-				color: $color-table-focus;
-				background-color: $backgroundcolor-table-focus;
+	&.data {
+		width:100%;
+		font-size:0.75em;
+		tbody {
+			tr {
 				&:nth-child(odd) {
-					color: $color-table-focus-even;
-					background-color: $backgroundcolor-table-focus-even;
+					@if $switch-use-dark {
+						background-color: $color-black;
+					}
+					@else {
+						background-color: $color-white;
+					}
+				}
+				&.focus {
+					background-color: $color-yellow;
+					&:nth-child(odd) {
+						background-color: $color-yellow-light;
+					}
 				}
 			}
 		}

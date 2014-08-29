@@ -14,3 +14,11 @@ html {
 		}
 	}
 }
+#main {
+	.block-container-2 {
+		ul.col {
+			@include column-count(3);
+		}
+	}
+
+}
