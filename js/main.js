@@ -68,8 +68,8 @@
 						;
 					}
 					if (this.elements.forms.length) {
-						this.elements.forms.on('change keyup','.js-input-linked',function(event) {
-							var linked = that.elements.forms.find($(this).attr('input-linked'));
+						this.elements.forms.on('change keyup input','.js-input-linked',function(event) {
+							var linked = that.elements.forms.find($(this).data('input-linked'));
 							if (linked.length) {
 								linked.val($(this).val());
 							}
