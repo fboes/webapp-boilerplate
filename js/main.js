@@ -69,7 +69,7 @@
 					}
 					if (this.elements.forms.length) {
 						this.elements.forms.on('click','.js-input-linked',function(event) {
-							var linked = that.elements.form.find($(this).attr('input-linked'));
+							var linked = that.elements.forms.find($(this).attr('input-linked'));
 							if (linked.length) {
 								linked.val($(this).val());
 							}
