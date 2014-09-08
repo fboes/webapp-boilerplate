@@ -12,6 +12,7 @@
 					modal    : null,
 					messages : null,
 					banner   : null,
+					forms    : null
 				},
 				init : function (el) {
 					var that = this;
@@ -19,6 +20,7 @@
 					this.elements.modal    = el.find('#modal');
 					this.elements.messages = el.find('#messages');
 					this.elements.banner   = el.find('#banner');
+					this.elements.forms    = el.find('form');
 					if (this.elements.messages.length) {
 						var timer = setTimeout(function () {
 							that.elements.messages.addClass('js-hidden');
@@ -28,7 +30,7 @@
 				},
 				bindEvents : function () {
 					var that = this;
-					if (this.elements.banner) {
+					if (this.elements.banner.length) {
 						this.elements.banner.on('click','.header-menu',function(event) {
 							event.preventDefault();
 							that.elements.banner.find('.nav-main').toggle();
@@ -64,6 +66,14 @@
 								that.elements.modal.find('section').hide();
 							})
 						;
+					}
+					if (this.elements.form.length) {
+						this.elements.form.on('click','.js-input-linked',function(event) {
+							var linked = that.elements.form.find($(this).attr('input-linked'));
+							if (linked.length) {
+								linked.val($(this).val());
+							}
+						});
 					}
 				},
 				openModal : function (openEl) {

@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         tasks: ['compass']
       },
       scripts: {
-        files: ['js/**/*.js'],
+        files: ['js/main.js', 'js/vendor/**/*.js'],
         tasks: ['uglify']
       }
     }
