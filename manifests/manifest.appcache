@@ -10,9 +10,7 @@ CACHE:
 //fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700
 //netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css
 ../css/styles.css
-../js/main.js
-../js/vendor/js-toolshed/js-toolshed.js
-../js/vendor/js-toolshed/jquery-toolshed.js
+../js/main.min.js
 //code.jquery.com/jquery-2.1.0.min.js
 
 #FALLBACK:

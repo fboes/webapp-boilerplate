@@ -2,13 +2,13 @@
 	"name": "Flashy application name",
 	"version": "1.0",
 	"description": "Flashy description",
-	"launch_path": "/my-flashy-path/",
-	"appcache_path": "/my-flashy-path/manifests/manifest.appcache",
+	"launch_path": "/flashy-path/",
+	"appcache_path": "/flashy-path/manifests/manifest.appcache",
 	"icons": {
-		"32" : "/my-flashy-path/favicon.ico",
-		"60" : "/my-flashy-path/firefox-os-icon.png",
-		"152": "/my-flashy-path/apple-touch-icon.png",
-		"196": "/my-flashy-path/favicon.png"
+		"32" : "/flashy-path/favicon.ico",
+		"60" : "/flashy-path/firefox-os-icon.png",
+		"152": "/flashy-path/apple-touch-icon.png",
+		"196": "/flashy-path/favicon.png"
 	},
 	"developer": {
 		"name": "Flashy company",

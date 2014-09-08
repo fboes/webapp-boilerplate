@@ -32,6 +32,13 @@ Setup
 
 Remember: Firefox OS allows only one app per domain.
 
+You may also want to use [Grunt](http://gruntjs.com/):
+
+0. Run `npm install`
+1. Rename all variables above by modiying `Gruntfile.js` and calling `grunt replace`
+2. Create new favicons by putting an image at `images/logo.png` and calling `grunt favicon`
+1. Activate Grunt watcher via `grunt watch`
+
 Extended setup
 --------------
 
@@ -69,7 +76,7 @@ Things you may want to do
 Version
 -------
 
-Version: 1.0 (2014-07-25)
+Version: 1.0.1 (2014-09-08)
 
 Webbapp-Boilerplate legal stuff
 -------------------------------

@@ -2,3 +2,4 @@
 _stuff/*
 .idea/*
 *.sublime*
+node_modules

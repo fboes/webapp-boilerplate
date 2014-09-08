@@ -1,6 +1,3 @@
-[submodule "js/vendor/js-toolshed"]
-	path = js/vendor/js-toolshed
-	url = git://github.com/fboes/js-toolshed.git
 [submodule "sass/vendor/toolshed"]
 	path = sass/vendor/toolshed
 	url = git://github.com/fboes/SASS-Toolshed.git
