@@ -35,10 +35,25 @@ module.exports = function(grunt) {
       }
     },
 
+    jslint: {
+      build: {
+        src: [
+          'js/*.js',
+          '!js/main.min.js'
+        ],
+        directives: {
+          browser: true, white: true
+        },
+        options: {
+          failOnError: false
+        }
+      }
+    },
+
     uglify: {
       my_target: {
         files: {
-          'js/main.min.js': ['js/main.js', 'js/vendor/**/*.js']
+          'js/main.min.js': ['js/*.js', '!js/main.min.js', 'js/vendor/**/*.js']
         }
       }
     },
@@ -49,18 +64,19 @@ module.exports = function(grunt) {
         tasks: ['compass']
       },
       scripts: {
-        files: ['js/main.js', 'js/vendor/**/*.js'],
-        tasks: ['uglify']
+        files: ['js/*.js', '!js/main.min.js', 'js/vendor/**/*.js'],
+        tasks: ['jslint','uglify']
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-text-replace');
-  grunt.loadNpmTasks('grunt-favicons');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-favicons');
+  grunt.loadNpmTasks('grunt-jslint');
+  grunt.loadNpmTasks('grunt-text-replace');
 
-  grunt.registerTask('default', ['compass','uglify']);
+  grunt.registerTask('default', ['compass','jslint','uglify']);
 
 };

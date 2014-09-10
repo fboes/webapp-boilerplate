@@ -1,4 +1,6 @@
+/*global $, console */
 (function ($) {
+	'use strict';
 	$.fn.webapp = function (options) {
 		return this.each(function() {
 			var main = {
@@ -22,7 +24,7 @@
 					this.elements.banner   = el.find('#banner');
 					this.elements.forms    = el.find('form');
 					if (this.elements.messages.length) {
-						var timer = setTimeout(function () {
+						setTimeout(function () {
 							that.elements.messages.addClass('js-hidden');
 						}, 2000);
 					}
@@ -42,17 +44,17 @@
 							.on('click','a.modal', function (event) {
 								event.stopPropagation();
 								event.preventDefault();
-								var links = $(this).attr('href').split('#');
+								var links = $(this).attr('href').split('#'), openEl;
 								if (!links[1]) {
 									links[1] = links[0];
 									links[0] = null;
 								}
-								var openEl = that.elements.modal.find('#' + links[1]);
+								openEl = that.elements.modal.find('#' + links[1]);
 								if (!openEl.length && links[0]) {
-									$.get(links[0]+'?ajax',function(data,status){
+									$.get(links[0]+'?ajax',function(data){ // ,status
 										that.elements.modal.find('aside').append(data.replace(/<section/,'<section id="'+links[1]+'"'));
 										that.openModal(that.elements.modal.find('#' + links[1]));
-									})
+									});
 								}
 								else if (openEl.length) {
 									that.openModal(openEl);
@@ -61,14 +63,14 @@
 							.on('click','#modal section', function (event) {
 								event.stopPropagation();
 							})
-							.on('click','#modal', function (event) {
+							.on('click','#modal', function () { // event
 								that.elements.modal.hide();
 								that.elements.modal.find('section').hide();
 							})
 						;
 					}
 					if (this.elements.forms.length) {
-						this.elements.forms.on('change keyup input','.js-input-linked',function(event) {
+						this.elements.forms.on('change keyup input','.js-input-linked',function () { // event
 							var linked = that.elements.forms.find($(this).data('input-linked'));
 							if (linked.length) {
 								linked.val($(this).val());
@@ -88,12 +90,12 @@
 						}).show().find(':input:first').focus();
 					}
 				}
-			}
+			};
 
 			main.init($(this));
 		});
-	}
-})(jQuery);
+	};
+}($));
 
 /*
 // Add installation dialog for Firefox OS
@@ -138,5 +140,6 @@ if (typeof window.applicationCache != 'undefined'){
 */
 
 $(document).ready(function() {
+	'use strict';
 	$('body').webapp({});
 });
