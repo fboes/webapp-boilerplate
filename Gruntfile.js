@@ -3,15 +3,16 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     compass: {
-      dist: {
+      build: {
         options: {
+					//basePath: '',
           config: 'config.rb'
         }
       }
     },
 
     replace: {
-      entities: {
+      setup: {
         src: ['*.html','*.xml','manifests/*','js/main.js'],
         overwrite: true,
         replacements: [
@@ -51,7 +52,7 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      my_target: {
+      build: {
         files: {
           'js/main.min.js': ['js/*.js', '!js/main.min.js', 'js/vendor/**/*.js']
         }
