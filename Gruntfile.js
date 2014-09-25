@@ -60,9 +60,21 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      styles: {
+      options: {
+        livereload: true
+      },
+      grunt: {
+        files: ['Gruntfile.js']
+      },
+      sass: {
+        options: {
+          livereload: false
+        },
         files: ['sass/**/*.scss'],
         tasks: ['compass']
+      },
+      livereload: {
+        files: ['css/*.css', '*.html']
       },
       scripts: {
         files: ['js/*.js', '!js/main.min.js', 'js/vendor/**/*.js'],
