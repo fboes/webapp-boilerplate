@@ -1,19 +1,22 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    dirs: {
+      web: ''
+    },
 
     compass: {
       build: {
         options: {
-          //basePath: '',
-          config: 'config.rb'
+          basePath: '<%= dirs.web %>',
+          config: '<%= dirs.web %>config.rb'
         }
       }
     },
 
     replace: {
       setup: {
-        src: ['*.html','*.xml','manifests/*','js/main.js'],
+        src: ['<%= dirs.web %>*.html','<%= dirs.web %>*.xml','<%= dirs.web %>manifests/*','<%= dirs.web %>js/main.js'],
         overwrite: true,
         replacements: [
           {from: 'Flashy application name',to: 'Your application name'},
@@ -31,7 +34,7 @@ module.exports = function(grunt) {
         appleTouchPadding: 0
       },
       icons: {
-        src: 'img/logo.png',
+        src: '<%= dirs.web %>img/logo.png',
         dest: ''
       }
     },
@@ -39,8 +42,8 @@ module.exports = function(grunt) {
     jslint: {
       build: {
         src: [
-          'js/*.js',
-          '!js/main.min.js'
+          '<%= dirs.web %>js/*.js',
+          '!<%= dirs.web %>js/main.min.js'
         ],
         directives: {
           browser: true, white: true
@@ -54,30 +57,30 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         files: {
-          'js/main.min.js': ['js/*.js', '!js/main.min.js', 'js/vendor/**/*.js']
+          '<%= dirs.web %>js/main.min.js': ['<%= dirs.web %>js/*.js', '!<%= dirs.web %>js/main.min.js', '<%= dirs.web %>js/vendor/**/*.js']
         }
       }
     },
 
     watch: {
-      options: {
-        livereload: true
-      },
       grunt: {
         files: ['Gruntfile.js']
       },
       sass: {
-        options: {
-          livereload: false
-        },
-        files: ['sass/**/*.scss'],
+        files: ['<%= dirs.web %>sass/**/*.scss'],
         tasks: ['compass']
       },
       livereload: {
-        files: ['css/*.css', '*.html']
+        options: {
+          livereload: true
+        },
+        files: ['<%= dirs.web %>css/*.css', '<%= dirs.web %>*.html', '<%= dirs.web %>*.php']
       },
       scripts: {
-        files: ['js/*.js', '!js/main.min.js', 'js/vendor/**/*.js'],
+        options: {
+          livereload: true
+        },
+        files: ['<%= dirs.web %>js/*.js', '!<%= dirs.web %>js/main.min.js', '<%= dirs.web %>js/vendor/**/*.js'],
         tasks: ['jslint','uglify']
       }
     }
