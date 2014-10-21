@@ -16,6 +16,7 @@ a {
 }
 ul {
 	li {
+		margin-top:0;
 		margin-left: 1.5 * $base-unit;
 	}
 }
@@ -104,6 +105,9 @@ table {
 	a {
 		text-decoration: none;
 		color:inherit;
+	}
+	h1 {
+		margin:0;
 	}
 	.header-nav {
 		margin-left: -1.6rem;

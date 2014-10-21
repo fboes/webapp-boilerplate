@@ -15,12 +15,12 @@ html {
 	}
 }
 #main {
-	@include clearfix();
+	@include toolshed-clearfix();
 	.block-container,
 	.block-container-2,
 	.block-container-3,
 	.block-container-4 {
-		@include clearfix();
+		@include toolshed-clearfix();
 		section {
 			float:left;
 			width: 100%;
